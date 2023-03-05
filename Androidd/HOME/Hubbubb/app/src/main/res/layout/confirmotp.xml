@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="Confirm OTP"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="@color/main"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <EditText
+                android:id="@+id/fillotp"
+                android:inputType="number"
+                android:maxLength="6"
+                style="@style/modifiedEditText"
+                android:layout_height="63dp"
+                android:hint="OTP"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/parent"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/main"
+            android:layout_marginBottom="@dimen/loginViewsMargin"
+            android:id="@+id/msg"
+            android:visibility="gone"
+            android:text="OTP is already sent!"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:gravity="center_horizontal" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/confirmOTP"
+                style="@style/loginButton"
+                android:enabled="true"
+                android:text="Confirm OTP"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/cancel"
+                style="@style/loginButton"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Cancel" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

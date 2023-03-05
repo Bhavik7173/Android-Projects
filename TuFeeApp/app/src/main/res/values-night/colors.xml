@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="activityBackGroundColor">#30444e</color>
+    <color name="cardBackGroundColor">#22343c</color>
+    <color name="cardBackGroundColorShadow">#283e47</color>
+    <color name="dark_mode_aware_white">#22343c</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#dddddd</color>
+    <color name="overlay_dark_10">#1affffff</color>
+    <color name="overlay_dark_20">#33ffffff</color>
+    <color name="overlay_dark_30">#4dffffff</color>
+    <color name="overlay_dark_40">#66ffffff</color>
+    <color name="overlay_dark_50">#8ffffff0</color>
+    <color name="overlay_dark_60">#99ffffff</color>
+    <color name="overlay_dark_70">#b3ffffff</color>
+    <color name="overlay_dark_80">#ccffffff</color>
+    <color name="overlay_dark_90">#e6ffffff</color>
+    <color name="primaryColor">#ff464f</color>
+    <color name="primaryDarkColor">#c62930</color>
+    <color name="primaryLightColor">#ff5b63</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryColor">#ff464f</color>
+    <color name="secondaryDarkColor">#c62930</color>
+    <color name="secondaryLightColor">#ff5b63</color>
+    <color name="secondaryTextColor">#dddddd</color>
+    <color name="text_color_dark">#ffffff</color>
+    <color name="text_color_light">#828282</color>
+    <color name="text_color_medium">#cdcdcd</color>
+    <color name="title_backGroundColor">#263137</color>
+</resources>

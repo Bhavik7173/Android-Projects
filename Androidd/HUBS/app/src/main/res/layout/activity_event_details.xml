@@ -1,0 +1,352 @@
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteCardColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        style="@style/loginCard"
+        app:cardCornerRadius="@dimen/loginCardRadius"
+        android:elevation="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:layout_marginBottom="@dimen/loginViewsMargin"
+        android:background="@color/whiteCardColor">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#960808"
+            android:id="@+id/view_topBorder"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#960808"
+            android:id="@+id/Parrot_Color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#960808"
+            android:layout_gravity="bottom"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#960808"
+            android:layout_gravity="right"/>
+
+        <LinearLayout
+            style="@style/linearParent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/whiteCardColor"
+            android:padding="@dimen/loginViewsMargin">
+
+            <TextView
+                android:id="@+id/ETitle"
+                style="@style/headerTextPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="Event Title"
+                android:textAllCaps="true"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/Img"
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:src="@drawable/ic_content_paste_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Description"
+                        android:textColor="#960808"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#960808">
+
+                    <EditText
+                        android:id="@+id/ED"
+                        style="@style/modifiedEditText"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:src="@drawable/ic_date_range_black_24dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/parent"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#960808">
+
+                    <EditText
+                        android:id="@+id/ESD"
+                        style="@style/modifiedEditText"
+                        android:editable="false"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:src="@drawable/ic_date_range_black_24dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#960808">
+
+                    <EditText
+                        android:id="@+id/EED"
+                        style="@style/modifiedEditText"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="Start Date"
+                    android:textColor="#960808"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="End Date"
+                    android:textColor="#960808"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:src="@drawable/ic_access_time_black_24dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#960808">
+
+                    <EditText
+                        android:id="@+id/T"
+                        style="@style/modifiedEditText"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="Time"
+                android:textColor="#960808"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:src="@drawable/ic_location_on_black_24dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#960808">
+
+                    <EditText
+                        android:id="@+id/location"
+                        style="@style/modifiedEditText"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="Location"
+                android:textColor="#960808"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:src="@drawable/ic_file_download_black_24dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#960808" >
+
+                <EditText
+                    android:id="@+id/Download"
+                    android:onClick="pdfview"
+                    android:text="Click to see Event Details"
+                    style="@style/modifiedEditText"
+                    android:editable="false"
+                    android:maxLines="1"
+                    android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="View Event"
+                android:textColor="#960808"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

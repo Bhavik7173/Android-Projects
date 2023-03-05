@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:contextClickable="true"
+            android:visibility="visible"
+            app:title="Student Profile"
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/white"
+            android:textDirection="firstStrongLtr"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/main"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/contentBodyColor"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp">
+
+
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:gravity="end"
+            android:layout_marginRight="7dp"
+            android:clickable="true"
+            android:layout_gravity="end"
+            android:onClick="edit"
+            android:layout_marginBottom="20dp"
+            android:text="edit"
+            android:textStyle="bold"
+            android:textColor="@color/mid"
+            android:background="@android:color/transparent"
+            />
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/classImageView"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_class_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Class"
+                android:layout_toRightOf="@id/classImageView"
+                style="@style/profileDetailsTextProfile" />
+            <EditText
+                android:id="@+id/Class"
+                android:enabled="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/classImageView"
+                style="@style/profileDetailsMiniTextProfile" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsViewProfile" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/divImageView"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_class_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Division"
+                android:layout_toRightOf="@id/divImageView"
+                style="@style/profileDetailsTextProfile" />
+            <EditText
+                android:id="@+id/Div"
+                android:enabled="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/divImageView"
+                style="@style/profileDetailsMiniTextProfile" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsViewProfile" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/mentorImageView"
+                android:src="@drawable/ic_accessible_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Mentor"
+                android:layout_toRightOf="@id/mentorImageView"
+                style="@style/profileDetailsTextProfile" />
+
+            <EditText
+                android:id="@+id/Mentor"
+                android:enabled="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/mentorImageView"
+                style="@style/profileDetailsMiniTextProfile" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsViewProfile" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>

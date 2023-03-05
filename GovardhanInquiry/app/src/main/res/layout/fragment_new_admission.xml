@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/loginCard"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:layout_marginBottom="@dimen/loginViewsMargin"
+        android:background="@color/whiteCardColor"
+        android:elevation="5dp"
+        app:cardCornerRadius="@dimen/loginCardRadius">
+
+        <LinearLayout
+            style="@style/linearParent"
+            android:layout_gravity="center"
+            android:background="@color/whiteCardColor"
+            android:padding="@dimen/loginViewsMargin">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:textColorHint="@color/cardview_initial_background">
+
+                <TextView
+                    android:id="@+id/fName"
+                    style="@style/modifiedEditText"
+                    android:clickable="false"
+                    android:hint="Faculty Name"
+                    android:maxLines="1"
+                    android:textColor="@color/cardview_initial_background"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fspinner"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingLeft="17dp"
+                    android:entries="@array/spinner"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    tools:ignore="UnknownId" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:textColorHint="@color/cardview_initial_background">
+
+                <TextView
+                    android:id="@+id/CName"
+                    style="@style/modifiedEditText"
+                    android:hint="Course Name"
+                    android:maxLines="1"
+                    android:textColor="@color/cardview_initial_background"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cspinner"
+                    android:entries="@array/spinner"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    tools:ignore="UnknownId" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:textColorHint="@color/cardview_initial_background">
+
+                <EditText
+                    android:id="@+id/ahour"
+                    style="@style/modifiedEditText"
+                    android:hint="*Hour:"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:textColor="@color/cardview_initial_background"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:textColorHint="@color/cardview_initial_background">
+
+                <EditText
+                    android:id="@+id/time"
+                    style="@style/modifiedEditText"
+                    android:hint="*Time:"
+                    android:maxLines="1"
+                    android:textColor="@color/cardview_initial_background"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:textColorHint="@color/cardview_initial_background">
+
+                <EditText
+                    android:id="@+id/adate"
+                    style="@style/modifiedEditText"
+                    android:hint="*Admission Date:"
+                    android:maxLines="1"
+                    android:textColor="@color/cardview_initial_background"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:textColorHint="@color/cardview_initial_background">
+
+                <TextView
+                    android:id="@+id/astatusEdt"
+                    style="@style/modifiedEditText"
+                    android:hint="*Status:"
+                    android:maxLines="1"
+                    android:textColor="@color/cardview_initial_background"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/astatus"
+                    android:entries="@array/aspinner"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    tools:ignore="UnknownId" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/submitBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="18.7dp"
+                    android:layout_marginRight="9.35dp"
+                    android:layout_marginBottom="18.7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_fill__rounded_color"
+                    android:clickable="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="Submit"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/resetBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="9.35dp"
+                    android:layout_marginTop="18.7dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="18.7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_fill__rounded_color"
+                    android:clickable="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="Reset"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

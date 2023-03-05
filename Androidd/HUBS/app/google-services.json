@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "884261523702",
+    "firebase_url": "https://hubbub-e888e.firebaseio.com",
+    "project_id": "hubbub-e888e",
+    "storage_bucket": "hubbub-e888e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884261523702:android:b153231bf1c30c91a59cd7",
+        "android_client_info": {
+          "package_name": "com.example.samples"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884261523702-3djtuq0tf1mu1u7mjhi1qfgf3kcra19r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_Dg1E77XGoViED6yztD2fHXWL7Fn4_U4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884261523702-3djtuq0tf1mu1u7mjhi1qfgf3kcra19r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

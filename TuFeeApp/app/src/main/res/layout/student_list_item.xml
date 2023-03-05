@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:padding="@dimen/_6sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p068de.hdodenhof.circleimageview.CircleImageView android:id="@+id/student_pic" android:padding="@dimen/_4sdp" android:layout_width="@dimen/_48sdp" android:layout_height="@dimen/_48sdp" android:layout_margin="@dimen/_4sdp" android:src="@drawable/ic_empty_profile_image"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/_6sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_medium" android:id="@+id/student_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Student Name" android:maxLines="1" android:fontFamily="@font/bw_medium" android:letterSpacing="0.1"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_medium" android:id="@+id/roll_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Roll No : 45" android:maxLines="1" android:fontFamily="@font/bw_regular"/>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

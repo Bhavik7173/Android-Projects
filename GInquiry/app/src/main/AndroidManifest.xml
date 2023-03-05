@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gi.ginquiry">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GInquiry"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".register.Signup"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".register.ForgotPassword"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".register.Login"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        </activity>
+
+
+        <activity
+            android:name=".admin.activity.AdminAdmission"
+            android:exported="false" />
+        <activity
+            android:name=".admin.addNew.AddNewFaculty"
+            android:exported="false" />
+        <activity
+            android:name=".admin.settings.AddCompanyProfile"
+            android:exported="false" />
+        <activity
+            android:name=".admin.settings.RateUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.activity.AdminFaculty"
+            android:exported="false" />
+        <activity
+            android:name=".admin.addNew.AddNewCourse"
+            android:exported="false" />
+        <activity
+            android:name=".admin.addNew.AddNewInquiry"
+            android:exported="false" />
+        <activity
+            android:name=".admin.activity.AdminCourse"
+            android:exported="false" />
+        <activity
+            android:name=".admin.activity.AdminInquiry"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider5269590079821320"
+            android:exported="true" />
+
+        <activity
+            android:name=".admin.recycleView.Recycler_View_Company_Profile"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".admin.settings.PersonalProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".admin.recycleView.Recycler_View_Achievements"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".admin.recycleView.Recycler_View_Skills"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".admin.settings.ChangePasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".admin.settings.AddAchievement"
+            android:exported="false" />
+        <activity
+            android:name=".admin.settings.AddSkill"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8708952486871722~8872590411" /> <!-- <service android:name="com.gi.programing_quiz.Notification.MyFireBaseMessagingService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.MESSAGING_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+
+
+        <activity
+            android:name=".admin.AdminHome"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

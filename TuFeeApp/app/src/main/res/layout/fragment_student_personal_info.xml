@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/id_card" android:layout_width="0dp" android:layout_height="24dp" android:src="@drawable/ic_id_card" android:adjustViewBounds="true" android:layout_weight="1" app:tint="@color/text_color_medium"/>
+                <ImageView android:id="@+id/send_whatsapp" android:layout_width="0dp" android:layout_height="24dp" android:src="@drawable/ic_whatsapp" android:adjustViewBounds="true" android:layout_weight="1" app:tint="@color/text_color_medium"/>
+                <ImageView android:id="@+id/send_call" android:layout_width="0dp" android:layout_height="24dp" android:src="@drawable/ic_phone" android:adjustViewBounds="true" android:layout_weight="1" app:tint="@color/text_color_medium"/>
+                <ImageView android:id="@+id/send_sms" android:layout_width="0dp" android:layout_height="24dp" android:src="@drawable/ic_sms" android:adjustViewBounds="true" android:layout_weight="1" app:tint="@color/text_color_medium"/>
+            </LinearLayout>
+            <View android:background="@color/secondaryColor" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp" android:alpha="0.3"/>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="@string/basic_info" android:fontFamily="@font/bw_medium"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/father_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:src="@drawable/img_father"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="8dp" android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Father Name" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                        <TextView android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:id="@+id/father_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Father Name" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/mother_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:src="@drawable/img_mother"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="8dp" android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mother Name" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                        <TextView android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:id="@+id/mother_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mother Name" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/gender_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:src="@drawable/img_gender"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="8dp" android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gender Type" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                        <TextView android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:id="@+id/gender" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Male" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/date_of_birth_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:src="@drawable/img_birthdate"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="8dp" android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Birth Date" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                        <TextView android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:id="@+id/date_of_birth" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Birth Date" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/caste_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:src="@drawable/img_caste"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="8dp" android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Caste Name" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                        <TextView android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:id="@+id/caste" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Caste" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/aadhar_number_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:src="@drawable/img_aadhar_card"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="8dp" android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Aadhar Number" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                        <TextView android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:id="@+id/aadhar_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Aadhar Number" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/secondaryColor" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp" android:alpha="0.3"/>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="Contact Info" android:fontFamily="@font/bw_medium"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/whats_app_number_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:src="@drawable/ic_whatsapp_icon_new"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="8dp" android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WhatsApp Number" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                        <TextView android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:id="@+id/whats_app_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WhatsApp Number" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/mobile_number_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:src="@drawable/img_sms"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="8dp" android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mobile Number" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                        <TextView android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:id="@+id/mobile_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mobile Number" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/address_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:src="@drawable/ic_location" app:tint="@color/secondaryColor"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="8dp" android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Address" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                        <TextView android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:id="@+id/address" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Address" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/secondaryColor" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp" android:alpha="0.3"/>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="Academic Info" android:fontFamily="@font/bw_medium"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/school_name_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:src="@drawable/img_school"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="8dp" android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="School Name" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                        <TextView android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:id="@+id/school_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="School Name" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/roll_number_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:src="@drawable/img_roll_number"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="8dp" android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Roll Number" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                        <TextView android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:id="@+id/roll_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/standard_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:src="@drawable/img_standard"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="8dp" android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Standard" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                        <TextView android:textColor="@color/text_color_medium" android:layout_gravity="center_vertical" android:id="@+id/standard" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Standard" android:fontFamily="@font/bw_regular" android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/secondaryColor" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp" android:alpha="0.3"/>
+            <com.google.android.material.button.MaterialButton android:textColor="@color/secondaryDarkColor" android:gravity="center" android:layout_gravity="center" android:id="@+id/send_password_app_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send ID-Password &amp; App Link" android:textAllCaps="false" android:drawableEnd="@drawable/ic_open_in_new" android:layout_marginStart="@dimen/_4sdp" android:layout_marginEnd="@dimen/_4sdp" android:drawableTint="@color/secondaryDarkColor" style="@style/Widget.MaterialComponents.Button.TextButton"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

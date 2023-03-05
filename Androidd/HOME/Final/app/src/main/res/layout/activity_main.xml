@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/loginParent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView style="@style/parent">
+
+        <RelativeLayout style="@style/parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/login_shape"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        style="@style/TitleText"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:text="HUBBUB"
+                        android:textColor="@color/whiteCardColor" />
+
+                    <include
+                        android:id="@+id/rl"
+                        layout="@layout/layout_register"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/ll"
+                        layout="@layout/layout_login" />
+
+                    <include
+                        android:id="@+id/so"
+                        layout="@layout/layout_sendotp"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/co"
+                        layout="@layout/layout_confirmotp"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/gnp"
+                        layout="@layout/layout_generatenewpassword"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

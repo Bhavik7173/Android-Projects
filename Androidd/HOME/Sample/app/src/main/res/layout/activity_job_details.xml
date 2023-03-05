@@ -1,0 +1,400 @@
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteCardColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        style="@style/parent">
+    <androidx.cardview.widget.CardView
+        style="@style/loginCard"
+        app:cardCornerRadius="@dimen/loginCardRadius"
+        android:elevation="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:layout_marginBottom="@dimen/loginViewsMargin"
+        android:background="@color/whiteCardColor">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#960808"
+            android:id="@+id/view_topBorder"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#960808"
+            android:id="@+id/Parrot_Color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#960808"
+            android:layout_gravity="bottom"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#960808"
+            android:layout_gravity="right"/>
+
+        <LinearLayout
+            style="@style/linearParent"
+            android:layout_gravity="center"
+            android:background="@color/whiteCardColor"
+            android:padding="@dimen/loginViewsMargin">
+
+            <TextView
+                android:id="@+id/JT"
+                style="@style/headerTextPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="Job Title"
+                android:textAllCaps="true"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/Img"
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="44dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:src="@drawable/ic_content_paste_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Description"
+                        android:textColor="#960808"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#960808">
+
+                    <EditText
+                        android:id="@+id/JD"
+                        style="@style/modifiedEditText"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:src="@drawable/ic_date_range_black_24dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#960808">
+
+                    <EditText
+                        android:id="@+id/JSD"
+                        style="@style/modifiedEditText"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:src="@drawable/ic_date_range_black_24dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#960808">
+
+                    <EditText
+                        android:id="@+id/JED"
+                        style="@style/modifiedEditText"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="Start Date"
+                    android:textColor="#960808"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="End Date"
+                    android:textColor="#960808"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:src="@drawable/ic_access_time_black_24dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#960808">
+
+                    <EditText
+                        android:id="@+id/JRE"
+                        style="@style/modifiedEditText"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:text=" Required\nExperience"
+                android:textColor="#960808"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:src="@drawable/ic_location_on_black_24dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#960808">
+
+                    <EditText
+                        android:id="@+id/location"
+                        style="@style/modifiedEditText"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="Location"
+                android:textColor="#960808"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:src="@drawable/ic_attach_money_black_24dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#960808">
+
+                    <EditText
+                        android:id="@+id/JS"
+                        style="@style/modifiedEditText"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="0dp"
+                android:text="Salary"
+                android:textColor="#960808"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:src="@drawable/pdf" />
+
+                    <EditText
+                        android:id="@+id/JF"
+                        android:onClick="pdfview"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="0dp"
+                        style="@style/modifiedEditText"
+                        android:backgroundTint="@color/white"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:textColor="@color/mid"
+                        android:text="Click to See Job Details PDF"
+                        android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="Job Details"
+                android:textColor="#960808"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/JA"
+                style="@style/loginButton"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:onClick="apply"
+                android:textAllCaps="false"
+                android:text="APPLY"
+                android:textColor="@color/whiteCardColor" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>

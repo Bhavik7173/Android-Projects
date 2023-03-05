@@ -1,0 +1,228 @@
+Step 1: Create a New Project
+
+Step 2: Add the below dependency in your build.gradle file
+		implementation ‘com.squareup.retrofit2:retrofit:2.9.0’
+		implementation ‘com.squareup.retrofit2:converter-gson:2.5.0’
+
+Step 3: Adding permissions to the internet in the AndroidManifest.xml file
+		<uses-permission android:name="android.permission.INTERNET"/>
+
+Step 4: Working with the activity_main.xml file
+		<?xml version="1.0" encoding="utf-8"?>
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:tools="http://schemas.android.com/tools"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			tools:context=".MainActivity">
+
+			<!--edit text field for adding name-->
+			<EditText
+				android:id="@+id/idEdtName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:layout_marginTop="40dp"
+				android:hint="Enter your name" />
+
+			<!--edit text for adding job-->
+			<EditText
+				android:id="@+id/idEdtJob"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:hint="Enter your job" />
+
+			<!--button for adding data-->
+			<Button
+				android:id="@+id/idBtnPost"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:text="Send Data to API"
+				android:textAllCaps="false" />
+
+			<!--text view for displaying our API response-->
+			<TextView
+				android:id="@+id/idTVResponse"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:gravity="center_horizontal"
+				android:text="Response"
+				android:textAlignment="center"
+				android:textSize="15sp" />
+
+			<!--progress bar for loading -->
+			<ProgressBar
+				android:id="@+id/idLoadingPB"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:visibility="gone" />
+
+		</LinearLayout>
+
+Step 5: Creating a modal class for storing our data
+		app > java > your app’s package name > Right-click on it > New > Java class and name it as DataModal 
+		public class DataModal {
+	
+			// string variables for our name and job
+			private String name;
+			private String job;
+
+			public DataModal(String name, String job) {
+				this.name = name;
+				this.job = job;
+			}
+
+			public String getName() {
+				return name;
+			}
+
+			public void setName(String name) {
+				this.name = name;
+			}
+
+			public String getJob() {
+				return job;
+			}
+
+			public void setJob(String job) {
+				this.job = job;
+			}
+			
+		}
+
+Step 6: Creating an Interface class for our API Call
+		app > java > your app’s package name > Right-click on it > New > Java class 
+		select it as Interface and name the file as RetrofitAPI
+		 
+		import retrofit2.Call;
+		import retrofit2.http.Body;
+		import retrofit2.http.POST;
+
+		public interface RetrofitAPI {
+			
+			// as we are making a post request to post a data
+			// so we are annotating it with post
+			// and along with that we are passing a parameter as users
+			@POST("users")
+			
+			//on below line we are creating a method to post our data.
+			Call<DataModal> createPost(@Body DataModal dataModal);
+		}
+ 
+Step 7: Working with the MainActivity.java file
+		
+		import android.os.Bundle;
+		import android.view.View;
+		import android.widget.Button;
+		import android.widget.EditText;
+		import android.widget.ProgressBar;
+		import android.widget.TextView;
+		import android.widget.Toast;
+		import androidx.appcompat.app.AppCompatActivity;
+		import retrofit2.Call;
+		import retrofit2.Callback;
+		import retrofit2.Response;
+		import retrofit2.Retrofit;
+		import retrofit2.converter.gson.GsonConverterFactory;
+
+		public class MainActivity extends AppCompatActivity {
+
+			// creating variables for our edittext,
+			// button, textview and progressbar.
+			private EditText nameEdt, jobEdt;
+			private Button postDataBtn;
+			private TextView responseTV;
+			private ProgressBar loadingPB;
+
+			@Override
+			protected void onCreate(Bundle savedInstanceState) {
+				super.onCreate(savedInstanceState);
+				setContentView(R.layout.activity_main);
+				
+				// initializing our views
+				nameEdt = findViewById(R.id.idEdtName);
+				jobEdt = findViewById(R.id.idEdtJob);
+				postDataBtn = findViewById(R.id.idBtnPost);
+				responseTV = findViewById(R.id.idTVResponse);
+				loadingPB = findViewById(R.id.idLoadingPB);
+				
+				// adding on click listener to our button.
+				postDataBtn.setOnClickListener(new View.OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						// validating if the text field is empty or not.
+						if (nameEdt.getText().toString().isEmpty() && jobEdt.getText().toString().isEmpty()) {
+							Toast.makeText(MainActivity.this, "Please enter both the values", Toast.LENGTH_SHORT).show();
+							return;
+						}
+						// calling a method to post the data and passing our name and job.
+						postData(nameEdt.getText().toString(), jobEdt.getText().toString());
+					}
+				});
+			}
+
+			private void postData(String name, String job) {
+				
+				// below line is for displaying our progress bar.
+				loadingPB.setVisibility(View.VISIBLE);
+				
+				// on below line we are creating a retrofit
+				// builder and passing our base url
+				Retrofit retrofit = new Retrofit.Builder()
+						.baseUrl("https://reqres.in/api/")
+						// as we are sending data in json format so
+						// we have to add Gson converter factory
+						.addConverterFactory(GsonConverterFactory.create())
+						// at last we are building our retrofit builder.
+						.build();
+				// below line is to create an instance for our retrofit api class.
+				RetrofitAPI retrofitAPI = retrofit.create(RetrofitAPI.class);
+				
+				// passing data from our text fields to our modal class.
+				DataModal modal = new DataModal(name, job);
+				
+				// calling a method to create a post and passing our modal class.
+				Call<DataModal> call = retrofitAPI.createPost(modal);
+				
+				// on below line we are executing our method.
+				call.enqueue(new Callback<DataModal>() {
+					@Override
+					public void onResponse(Call<DataModal> call, Response<DataModal> response) {
+						// this method is called when we get response from our api.
+						Toast.makeText(MainActivity.this, "Data added to API", Toast.LENGTH_SHORT).show();
+						
+						// below line is for hiding our progress bar.
+						loadingPB.setVisibility(View.GONE);
+						
+						// on below line we are setting empty text
+						// to our both edit text.
+						jobEdt.setText("");
+						nameEdt.setText("");
+						
+						// we are getting response from our body
+						// and passing it to our modal class.
+						DataModal responseFromAPI = response.body();
+						
+						// on below line we are getting our data from modal class and adding it to our string.
+						String responseString = "Response Code : " + response.code() + "\nName : " + responseFromAPI.getName() + "\n" + "Job : " + responseFromAPI.getJob();
+						
+						// below line we are setting our
+						// string to our text view.
+						responseTV.setText(responseString);
+					}
+
+					@Override
+					public void onFailure(Call<DataModal> call, Throwable t) {
+						// setting text to our text view when
+						// we get error response from API.
+						responseTV.setText("Error found is : " + t.getMessage());
+					}
+				});
+			}
+		}
+

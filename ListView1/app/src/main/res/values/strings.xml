@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ListView1</string>
+    <string-array name="data">
+        <item>Android</item>
+        <item>Advance Java</item>
+        <item>Python</item>
+        <item>Core Java</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>Data Analysis</item>
+        <item>Flutter</item>
+        <item>.Net</item>
+        <item>C#</item>
+        <item>Dart</item>
+        <item>DBMS</item>
+        <item>Spring</item>
+    </string-array>
+</resources>

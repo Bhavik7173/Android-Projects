@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/cardBackGroundColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" app:cardCornerRadius="8dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/primaryTextColor" android:gravity="center" android:id="@+id/title_text" android:background="@color/secondaryColor" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/change_language" android:fontFamily="@font/bw_medium"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/primaryTextColor" android:id="@+id/english" android:background="@drawable/text_button_shape" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="English" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+            <Button android:textColor="@color/primaryTextColor" android:id="@+id/hindi" android:background="@drawable/text_button_shape" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="हिन्दी" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/primaryTextColor" android:id="@+id/gujarati" android:background="@drawable/text_button_shape" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="ગુજરાતી" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+            <Button android:textColor="@color/primaryTextColor" android:id="@+id/arabic" android:background="@drawable/text_button_shape" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="عربى" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/primaryTextColor" android:id="@+id/french" android:background="@drawable/text_button_shape" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="Française" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+            <Button android:textColor="@color/primaryTextColor" android:id="@+id/kannada" android:background="@drawable/text_button_shape" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="ಕನ್ನಡ" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/primaryTextColor" android:id="@+id/bengali" android:background="@drawable/text_button_shape" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="বাংলা" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+            <Button android:textColor="@color/primaryTextColor" android:id="@+id/malayalam" android:background="@drawable/text_button_shape" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="മലയാളം" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/primaryTextColor" android:id="@+id/marathi" android:background="@drawable/text_button_shape" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="मराठी" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+            <Button android:textColor="@color/primaryTextColor" android:id="@+id/tamil" android:background="@drawable/text_button_shape" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="தமிழ்" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/primaryTextColor" android:id="@+id/telugu" android:background="@drawable/text_button_shape" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="తెలుగు" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+            <Button android:textColor="@color/primaryTextColor" android:id="@+id/urdu" android:background="@drawable/text_button_shape" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="اردو" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

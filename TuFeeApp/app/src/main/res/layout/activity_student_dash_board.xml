@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/activityBackGroundColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@+id/toolbar" android:padding="@dimen/_6sdp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+        <p068de.hdodenhof.circleimageview.CircleImageView android:layout_width="@dimen/_36sdp" android:layout_height="@dimen/_36sdp" android:src="@drawable/ic_empty_profile_image"/>
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/student_name" android:padding="@dimen/_6sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textIsSelectable="true"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/setting" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:layout_margin="@dimen/_6sdp" android:src="@drawable/ic_settings" android:contentDescription="@string/app_name"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:padding="@dimen/_6sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/rounded_corner_bg" android:padding="@dimen/_4sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_4sdp">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_6sdp" android:text="@string/attendance" android:fontFamily="@font/bw_medium" android:layout_marginStart="@dimen/_6sdp"/>
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/attendance_batch_container" android:padding="@dimen/_6sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_6sdp"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/classworks" android:background="@drawable/rounded_corner_bg" android:padding="@dimen/_8sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/_4sdp" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/class_work" android:fontFamily="@font/bw_medium" app:drawableEndCompat="@drawable/ic_arrow_forward"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/homeworks" android:background="@drawable/rounded_corner_bg" android:padding="@dimen/_8sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/_4sdp" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/homework" android:fontFamily="@font/bw_medium" app:drawableEndCompat="@drawable/ic_arrow_forward"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/batches" android:background="@drawable/rounded_corner_bg" android:padding="@dimen/_8sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/_4sdp" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/batches" android:fontFamily="@font/bw_medium" app:drawableEndCompat="@drawable/ic_arrow_forward"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/exams" android:background="@drawable/rounded_corner_bg" android:padding="@dimen/_8sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/_4sdp" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/exams" android:fontFamily="@font/bw_medium" app:drawableEndCompat="@drawable/ic_arrow_forward"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/fees" android:background="@drawable/rounded_corner_bg" android:padding="@dimen/_4sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_4sdp">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_6sdp" android:layout_marginBottom="@dimen/_6sdp" android:text="@string/fees" android:fontFamily="@font/bw_medium" android:layout_marginStart="@dimen/_6sdp" app:drawableEndCompat="@drawable/ic_arrow_forward"/>
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/due_fee_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_6sdp">
+                    <View android:background="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.5"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/text_color_medium" android:gravity="center" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/batch_nname" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+                        <TextView android:textColor="@color/text_color_medium" android:gravity="center" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/due_nfrom" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+                        <TextView android:textColor="@color/text_color_medium" android:gravity="center" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/due_ntill" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+                        <TextView android:textColor="@color/text_color_medium" android:gravity="center" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/due_namount" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+                    </LinearLayout>
+                    <View android:background="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.5"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/due_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <View android:background="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.5"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/text_color_medium" android:gravity="center" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1"/>
+                        <TextView android:textColor="@color/text_color_medium" android:gravity="center" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1"/>
+                        <TextView android:textColor="@color/text_color_medium" android:gravity="center" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/total_due" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+                        <TextView android:textColor="@color/text_color_medium" android:gravity="center" android:id="@+id/total_due_fee" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+                    </LinearLayout>
+                    <View android:background="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.5"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

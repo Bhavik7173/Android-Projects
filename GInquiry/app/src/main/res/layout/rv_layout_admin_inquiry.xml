@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Card View widget-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="50dp"
+    card_view:cardElevation="8dp"
+    card_view:contentPadding="8dp">
+
+    <!--Text View over Card View-->
+    <ImageView
+        android:id="@+id/course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp" />
+
+</androidx.cardview.widget.CardView>
+

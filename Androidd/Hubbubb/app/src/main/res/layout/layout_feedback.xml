@@ -1,0 +1,73 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/whiteCardColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        style="@style/headerTextPrimary"
+        android:text="Feedback"
+        android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/parent"
+        android:textColorHint="#960808"
+        android:layout_marginTop="@dimen/signup_text_margin_top">
+
+        <EditText
+            android:id="@+id/sub"
+            style="@style/modifiedEditText"
+            android:layout_height="63dp"
+            android:hint="Subject" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:textColorHint="#960808"
+        android:layout_marginTop="@dimen/signup_text_margin_top">
+        <EditText
+            style="@style/modifiedEditText"
+            android:id="@+id/YF"
+            android:layout_height="200dp"
+            android:gravity="start"
+            android:textColor="#960808"
+            android:maxLines="1"
+            android:hint="Your Feedback"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/SF"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            style="@style/loginButton"
+            android:textColor="@color/white"
+            android:text="Submit" />
+        <Button
+            android:id="@+id/cancel"
+            style="@style/loginButton"
+            android:textColor="@color/white"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Cancel" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/whiteCardColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/loginCard"
+        app:cardCornerRadius="@dimen/loginCardRadius"
+        android:elevation="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:layout_marginBottom="@dimen/loginViewsMargin"
+        android:background="@color/whiteCardColor">
+
+        <LinearLayout
+            style="@style/linearParent"
+            android:layout_gravity="center"
+            android:background="@color/whiteCardColor"
+            android:padding="@dimen/loginViewsMargin">
+
+            <TextView
+                style="@style/headerTextPrimary"
+                android:text="COMPANY PROFILE"
+                android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/CN"
+                    android:maxLines="1"
+                    android:hint="Company Name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/CDOJ"
+                    android:maxLines="1"
+                    android:editable="false"
+                    android:hint="Date Of Joining"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/CDOL"
+                    android:editable="false"
+                    android:maxLines="1"
+                    android:hint="Date Of Leaving"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/CP"
+                    android:maxLines="1"
+                    android:hint="Position In Comapny"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/CS"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:hint="Salary"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                style="@style/loginButton"
+                android:layout_gravity="center"
+                android:onClick="updateCompanyDetails"
+                android:visibility="visible"
+                android:id="@+id/update"
+                android:textColor="@color/whiteCardColor"
+                android:text="UPDATE" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

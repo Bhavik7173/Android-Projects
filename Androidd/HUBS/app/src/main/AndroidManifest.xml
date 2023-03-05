@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samples">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE3" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".account.myActivities.viewPDF"></activity>
+
+        <service
+            android:name=".Service.MyService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".account.accountSecurity.StudentProfileActivity" />
+        <activity android:name=".account.myActivities.PostJobsActivity" />
+        <activity android:name=".account.myActivities.PostEventsActivity" />
+        <activity android:name=".account.accountSecurity.ChangePasswordActivity" />
+        <activity android:name=".account.accountSecurity.ProfessionalProfileActivity" />
+        <activity android:name=".account.accountSecurity.PersonalProfileActivity" />
+        <activity android:name=".Frags.AchievementDetails" />
+        <activity android:name=".Frags.ProProfileDetails" />
+        <activity android:name=".Frags.CompanyDetails" />
+        <activity android:name=".Frags.SkillDetails" />
+        <activity android:name=".Frags.AddAchievement" />
+        <activity android:name=".Frags.AddSkill" />
+        <activity android:name=".account.aboutMe.Recycler_View_Achievements" />
+        <activity android:name=".account.aboutMe.Recycler_View_Skills" />
+        <activity android:name=".Frags.AddCompanyProfile" />
+        <activity android:name=".account.aboutMe.Recycler_View_Company_Profile" />
+        <activity android:name=".Frags.JobEmptyResponse" />
+        <activity android:name=".FacultyActivity" />
+        <activity android:name=".AlumniActivity" />
+        <activity android:name=".Frags.EventEmptyResponse" />
+        <activity android:name=".HubsHome" />
+        <activity android:name=".JobsActivity" />
+        <activity android:name=".EventsActivity" />
+        <activity android:name=".Frags.JobDetails" />
+        <activity android:name=".Frags.EventDetails" />
+        <activity android:name=".Frags.AlumniDetails" />
+        <activity android:name=".FacultyDetails" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUp" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

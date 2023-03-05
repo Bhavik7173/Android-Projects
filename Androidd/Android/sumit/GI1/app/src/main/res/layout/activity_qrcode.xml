@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <androidx.cardview.widget.CardView
+        style="@style/loginCard"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:layout_marginBottom="@dimen/loginViewsMargin"
+        android:background="@color/whiteCardColor"
+        android:elevation="5dp"
+        app:cardBackgroundColor="@color/main1"
+        app:cardCornerRadius="@dimen/loginCardRadius">
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_above="@+id/btnAction"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="300dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/qr_code"
+                style="@style/sendButton"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:onClick="scanqr"
+                android:text="Show Payment Code"
+                android:textColor="@color/whiteCardColor" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idEdtPhoneNumber"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:textColorHint="@color/main"
+        app:endIconDrawable="@drawable/show_contact_selector"
+        app:endIconMode="none"
+        app:endIconTint="@color/main">
+
+        <EditText
+            android:id="@+id/mobile_no1"
+            style="@style/modifiedEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="+91 | Enter Mobile No"
+            android:inputType="number"
+            android:textColor="@color/main" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

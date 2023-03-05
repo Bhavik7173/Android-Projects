@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:background="@color/whiteCardColor"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="Confirm Your Email For OTP"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <EditText
+                android:id="@+id/otpemail"
+                style="@style/modifiedEditText"
+                android:layout_height="63dp"
+                android:hint="@string/login_email_hint"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/parent"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#960808"
+            android:layout_marginBottom="@dimen/loginViewsMargin"
+            android:id="@+id/s"
+            android:visibility="gone"
+            android:text="Email is not registered"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <Button
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:id="@+id/sendOTP"
+            android:textColor="@color/whiteCardColor"
+            android:onClick="sendOTP"
+            android:text="Send OTP" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Gi Payment</string>
+    <string name="register">REGISTER</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="login_mobile_hint">Register Mobile Number</string>
+    <string name="login_password_hint">Password</string>
+    <string name="home">Home</string>
+    <string name="waiting_time">3000</string>
+    <string name="IP1">http://192.168.84.195/wallet/</string>
+    <string name="IP">http://192.168.29.85/wallet/</string>
+    <string name="account_holder">Patel Bhavik S.</string>
+    <string name="qr_code">qr_code</string>
+    <string name="spinner">Choose Your ID Proof</string>
+    <string name="mobile_no">+91 6353539097</string>
+    <string-array name="drawer_home">
+        <item>Home</item>
+        <item>Payment</item>
+        <item>About Us</item>
+        <item>Contact Us</item>
+        <item>Logout</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

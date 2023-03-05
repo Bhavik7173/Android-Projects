@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/edit" android:title="@string/edit"/>
+    <item android:id="@+id/reopen_batch" android:title="@string/reopen_batch"/>
+    <item android:id="@+id/close_batch" android:title="@string/close_batch"/>
+    <item android:id="@+id/batch_shift" android:title="@string/shift"/>
+    <item android:id="@+id/delete" android:title="@string/delete"/>
+</menu>

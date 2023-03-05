@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_64sdp" app:cardBackgroundColor="@color/dark_mode_aware_white" app:cardCornerRadius="@dimen/_12sdp">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/loading_anim" android:layout_width="@dimen/_148sdp" android:layout_height="wrap_content" android:adjustViewBounds="true" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/lottie_network_sync_new"/>
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color_dark" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:text="@string/loading" android:fontFamily="@font/arialmtroundedbold" android:textAlignment="center" android:paddingStart="@dimen/_16sdp" android:paddingEnd="@dimen/_16sdp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>

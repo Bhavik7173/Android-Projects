@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:contextClickable="true"
+            android:visibility="visible"
+            app:title="Post Jobs"
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/white"
+            android:textDirection="firstStrongLtr"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/main"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+<ScrollView android:background="@color/white"
+    style="@style/parent"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/loginCard"
+        app:cardCornerRadius="@dimen/loginCardRadius"
+        android:elevation="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:layout_marginBottom="@dimen/loginViewsMargin"
+        android:background="@color/whiteCardColor">
+
+        <LinearLayout
+            style="@style/linearParent"
+            android:layout_gravity="center"
+            android:background="@color/whiteCardColor"
+            android:padding="@dimen/loginViewsMargin">
+
+            <TextView
+                style="@style/headerTextPrimary"
+                android:text="POST JOB"
+                android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/JT"
+                    android:maxLines="1"
+                    android:text="Title"
+                    android:hint="Job Title"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/CL"
+                    android:maxLines="1"
+                    android:editable="false"
+                    android:text="No Company Logo Selected"
+                    android:hint="Upload Company Logo"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/JP"
+                    android:text="CEO"
+                    android:maxLines="1"
+                    android:hint="Post"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/JD"
+                    android:text="jjs"
+                    android:maxLines="1"
+                    android:hint="Job Details"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/JF"
+                    android:maxLines="1"
+                    android:editable="false"
+                    android:hint="Upload File (for more details)"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/JS"
+                    android:text="25000"
+                    android:maxLines="1"
+                    android:hint="Salary"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/JSD"
+
+                    android:maxLines="1"
+                    android:editable="false"
+                    android:hint="Application Opening Date"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/JED"
+                    android:maxLines="1"
+                    android:editable="false"
+                    android:hint="Application Closing Date"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#960808"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:id="@+id/JL"
+                    android:text="Surat"
+                    android:maxLines="1"
+                    android:hint="Job Location"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                style="@style/loginButton"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/PJ"
+                android:textColor="@color/whiteCardColor"
+                android:text="POST JOB" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
+</LinearLayout>

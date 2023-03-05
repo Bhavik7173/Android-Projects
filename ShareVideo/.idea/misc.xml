@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/drawable-v24/blue_border_rounded_cornwe.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/drawable-v24/cursor_color.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/drawable-v24/ic_baseline_email_24.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/drawable-v24/ic_baseline_visibility_off_24.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/drawable-v24/login_button_bk.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/drawable-v24/login_shape_bk.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/drawable-v24/password_visibility.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/drawable-v24/profile_back_button.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/drawable-v24/show_password_selector.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/drawable-v24/visible.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/drawable/ic_baseline_key_24.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/activity_course.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/confirmdialog.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/confirmotp.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/layout_confirmotp.xml" value="0.264" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/layout_generatenewpassword.xml" value="0.264" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/layout_login.xml" value="0.264" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/layout_register.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/layout_sendotp.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/logindialog.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/progressdialog.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/ShareVideo/app/src/main/res/layout/successdialog.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

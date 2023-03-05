@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">cameraActivity</string>
+    <string name="photo">Capture</string>
+</resources>

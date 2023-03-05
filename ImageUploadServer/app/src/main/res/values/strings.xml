@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ImageUploadServer</string>
+    <string name="album_name">Camera Sample</string>
+</resources>

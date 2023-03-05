@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    style="@style/parent">
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:background="@color/whiteCardColor"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="POST EVENT"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <EditText
+                android:id="@+id/EN"
+                style="@style/modifiedEditText"
+                android:layout_height="34dp"
+                android:hint="Event Title"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/EB"
+                android:maxLines="1"
+                android:editable="false"
+                android:hint="Upload Event Banner"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/ED"
+                android:maxLines="1"
+                android:hint="Event Details"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/EF"
+                android:maxLines="1"
+                android:editable="false"
+                android:hint="Upload File (for more details)"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+        <EditText
+            style="@style/modifiedEditText"
+            android:id="@+id/ESD"
+            android:maxLines="1"
+            android:editable="false"
+            android:hint="Event Start Date"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+        <EditText
+            style="@style/modifiedEditText"
+            android:id="@+id/EED"
+            android:maxLines="1"
+            android:editable="false"
+            android:hint="Event End Date"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+        <EditText
+            style="@style/modifiedEditText"
+            android:id="@+id/EST"
+            android:maxLines="1"
+            android:editable="false"
+            android:hint="Event Start Time"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+        <EditText
+            style="@style/modifiedEditText"
+            android:id="@+id/EET"
+            android:maxLines="1"
+            android:editable="false"
+            android:hint="Event End Time"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/EL"
+                android:maxLines="1"
+                android:hint="Event Location"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <Button
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="postEvent"
+            android:id="@+id/PE"
+            android:textColor="@color/whiteCardColor"
+            android:text="POST EVENT" />
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</ScrollView>

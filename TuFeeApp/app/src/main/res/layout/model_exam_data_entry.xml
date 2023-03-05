@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/_6sdp" android:paddingBottom="@dimen/_6sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_4sdp">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/_8sdp" android:paddingEnd="@dimen/_8sdp">
+        <p068de.hdodenhof.circleimageview.CircleImageView android:id="@+id/student_image" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_32sdp" android:layout_margin="@dimen/_8sdp" android:src="@drawable/ic_empty_profile_image"/>
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_dark" android:layout_gravity="center_vertical" android:id="@+id/student_name" android:padding="@dimen/_4sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/student_name" android:fontFamily="@font/bw_medium"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:boxStrokeColor="@color/secondaryColor" app:hintTextColor="@color/secondaryColor" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/_12sdp" android:gravity="start" android:id="@+id/remark" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/remarks_for_student" android:textCursorDrawable="@color/secondaryColor"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_12sdp" android:layout_marginEnd="@dimen/_12sdp">
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="@dimen/_124sdp" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/_8sdp" app:boxStrokeColor="@color/secondaryColor" app:hintTextColor="@color/secondaryColor" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/_12sdp" android:id="@+id/mark" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/gain_marks" android:inputType="numberDecimal" android:textCursorDrawable="@color/secondaryColor"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.google.android.material.button.MaterialButton android:textColor="@color/white" android:id="@+id/save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save" android:layout_marginStart="@dimen/_4sdp" android:layout_marginEnd="@dimen/_4sdp" android:backgroundTint="@color/secondaryColor" style="@style/Widget.MaterialComponents.Button"/>
+    </LinearLayout>
+</LinearLayout>

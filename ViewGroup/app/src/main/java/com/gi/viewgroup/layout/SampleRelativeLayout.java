@@ -1,0 +1,16 @@
+package com.gi.viewgroup.layout;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+import com.gi.viewgroup.R;
+
+public class SampleRelativeLayout extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sample_relative_layout);
+    }
+}

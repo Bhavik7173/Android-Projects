@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HUBS</string>
+    <string name="register">REGISTER</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+</resources>

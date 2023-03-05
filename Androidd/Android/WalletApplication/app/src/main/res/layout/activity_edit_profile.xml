@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/sv_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/paddingLayout"
+        android:paddingLeft="@dimen/paddingLayout"
+        android:paddingEnd="@dimen/paddingLayout"
+        android:paddingRight="@dimen/paddingLayout"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/profile_username_and_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopUserProfile" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_edit_profile_username"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginItemsInSectionLarge"
+                android:hint="@string/username"
+                app:helperText="@string/username">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_edit_profile_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_edit_profile_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginItemsInSectionMedium"
+                android:hint="@string/email"
+                app:helperText="@string/email"
+                app:layout_anchor="@id/til_edit_profile_username">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_edit_profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_edit_profile_vpa"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginItemsInSectionMedium"
+                android:hint="@string/vpa"
+                app:helperText="@string/vpa">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_edit_profile_vpa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginItemsInSectionMedium"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                    android:id="@+id/ccp_new_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_profile_mobile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile"
+                    app:helperText="@string/mobile">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_edit_profile_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="@integer/telephone_numbers_max_length_standard" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_change_password"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginBetweenSections"
+                android:text="@string/change_password" />
+
+            <Button
+                android:id="@+id/btn_change_passcode"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginItemsInSectionExtraSmall"
+                android:layout_marginBottom="@dimen/paddingLayout"
+                android:text="@string/change_passcode" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_edit_profile_save_changes"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/paddingLayout"
+        android:layout_marginRight="@dimen/paddingLayout"
+        android:layout_marginBottom="@dimen/paddingLayout"
+        android:background="@color/colorAccentBlack"
+        android:tint="@color/colorPrimary"
+        app:backgroundTint="@color/colorAccentBlack"
+        app:fabSize="normal"
+        app:layout_anchor="@id/sv_edit_profile"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@drawable/ic_save" />
+
+</android.support.design.widget.CoordinatorLayout>

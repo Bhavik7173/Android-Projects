@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    tools:context=".layout.SampleRelativeLayout">
+
+    <TextView
+        android:id="@+id/label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Enter User Name"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/label_name"
+        android:text="Your Text" />
+    <TextView
+        android:id="@+id/label_uemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_below="@id/label_name"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:text="Enter Email Add" />
+
+    <EditText
+        android:id="@+id/text_uemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/text_name"
+        android:layout_alignTop="@id/label_uemail"
+        android:text="Your Text" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/label_uemail"
+        android:layout_marginTop="28sp"
+        android:text="Login"/>
+</RelativeLayout>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="@color/white"
+            >
+            <ImageView
+                android:layout_height="160dp"
+                android:layout_width="160dp"
+                android:background="@drawable/circle_outline"
+                android:layout_gravity="center"
+                android:id="@+id/Image"
+                android:padding="2dp"
+                />
+            <TextView
+                android:id="@+id/imageView"
+                android:layout_width="160dp"
+                android:background="@drawable/circle"
+                android:text="K"
+                android:textAlignment="center"
+                android:textSize="100dp"
+                android:layout_gravity="center"
+                android:layout_height="160dp"
+                android:visibility="gone"
+                android:paddingTop="@dimen/nav_header_vertical_spacing" />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/imageloading"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/name"
+            android:enabled="false"
+            android:clickable="false"
+            android:editable="false"
+            android:text="GI SURAT"
+            style="@style/profileDetailsTextMainHead"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:enabled="false"
+            android:clickable="false"
+            android:editable="false"
+            android:layout_marginTop="7dp"
+            android:text="\t\t\tgisurat@gmail.com"
+            android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/acc_title"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:text="Account Security"
+            style="@style/profileDetailsTitle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/personal_profile"
+            android:layout_marginTop="10dp"
+            android:text="Personal Profile"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/student_profile"
+            android:layout_marginTop="10dp"
+            android:text="Student Profile"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/professional_profile"
+            android:layout_marginTop="10dp"
+            android:text="Professional Profile"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/changeP"
+            android:layout_marginTop="10dp"
+            android:text="Change Password"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/my_activities"
+            android:layout_marginTop="25dp"
+            android:gravity="start"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="My Activities"
+            style="@style/profileDetailsTitle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/post_events"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Post Events"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/post_jobs"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Post Jobs"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/posted_events"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Posted Events"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/posted_jobs"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Posted Jobs"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/liked_events"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Liked Events"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/disliked_events"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Disiked Events"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/interested_events"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Interested Events"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/applied_jobs"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Applied Jobs"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/about_me"
+            android:layout_marginTop="25dp"
+            android:gravity="start"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="About Me"
+            style="@style/profileDetailsTitle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/company_profile"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Company Profile"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/skills"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Skills"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/achievements"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Achievements"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/support"
+            android:layout_marginTop="25dp"
+            android:gravity="start"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Support"
+            style="@style/profileDetailsTitle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/contact_us"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Contact us"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/feedback"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Feedback"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/rate_us"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Rate us"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/share"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:text="Share Us"
+            android:gravity="start"
+            android:drawableRight="@drawable/menu_right_arrow_menu"
+            style="@style/profileDetailsTextMain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/sign_out"
+            android:layout_marginTop="7dp"
+            android:text="Sign Out"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/main"
+            style="@style/profileDetailsTextMain"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

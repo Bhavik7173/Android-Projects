@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/drawable/background.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/drawable/flash_animation.xml" value="0.1" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/drawable/flash_animation_a.xml" value="0.1" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/drawable/money_won_bg.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/drawable/new_background.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/drawable/new_state.xml" value="0.15" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/drawable/original_state.xml" value="0.15" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/drawable/shadow.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/drawable/timer_background.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/layout/activity_play.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/layout/activity_play_screen.xml" value="0.22826086956521738" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/layout/activity_quiz.xml" value="0.176" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/layout/activity_result.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/layout/activity_settings.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/layout/activity_splash.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/layout/dialog_for_audience.xml" value="0.22826086956521738" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/layout/dialog_for_telephone.xml" value="0.22826086956521738" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/layout/gameover_won_dialog.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/MillionApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

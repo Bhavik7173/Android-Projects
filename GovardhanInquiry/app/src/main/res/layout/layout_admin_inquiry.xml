@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_design"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium1"
+        android:layout_weight="1"
+        android:elevation="100dp"
+        card_view:cardBackgroundColor="@color/cardview_initial_background"
+        card_view:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_margin="5dp"
+                android:id="@+id/iname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Patel Bhavik"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_imobile" />
+
+                <TextView
+                    android:id="@+id/imobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_weight="1.0"
+                    android:text="6353539097"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_subject" />
+
+                <TextView
+                    android:id="@+id/icourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Course:JAVA"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                tools:ignore="UseCompoundDrawables">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_calender" />
+
+                <TextView
+                    android:id="@+id/idate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="26/07/2022"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:id="@+id/iedit"
+                    android:layout_marginLeft="55dp"
+                    android:src="@drawable/ic_edit"
+                    android:backgroundTint="@color/cardview_initial_background"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO" />
+
+                <ImageButton
+                    android:id="@+id/idelete"
+                    android:layout_marginLeft="18dp"
+                    android:src="@drawable/ic_delete"
+                    android:backgroundTint="@color/cardview_initial_background"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

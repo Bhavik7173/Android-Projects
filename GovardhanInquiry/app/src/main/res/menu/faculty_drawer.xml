@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addnewfaculty"
+        android:icon="@drawable/baseline_more_vert_18"
+        android:title="Add New Faculty" />
+    <item
+        android:id="@+id/fsearch"
+        android:icon="@drawable/baseline_more_vert_18"
+        android:title="Search" />
+</menu>

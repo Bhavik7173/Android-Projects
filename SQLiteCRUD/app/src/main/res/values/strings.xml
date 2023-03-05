@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Jariwala_Sqlite</string>
+    <string name="student_graduate_year">Please enter a valid Graduate Year</string>
+    <string name="student_removed">Student removed</string>
+    <string name="student_added">Student added</string>
+    <string name="insert_error">Please Enter the Student Name or Year</string>
+</resources>

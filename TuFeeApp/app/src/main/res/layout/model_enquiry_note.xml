@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:padding="@dimen/_6sdp" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:src="@drawable/img_clock"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_color_dark" android:layout_gravity="center_vertical" android:id="@+id/date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="23/12/2022" android:fontFamily="@font/bw_medium"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView android:textSize="14sp" android:textColor="@color/text_color_medium" android:id="@+id/note" android:padding="@dimen/_6sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Note About Enquiry" android:fontFamily="@font/bw_regular"/>
+    <View android:background="@color/secondaryColor" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.3"/>
+</LinearLayout>

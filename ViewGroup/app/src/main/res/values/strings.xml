@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ViewGroup</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment1">This is First Fragment</string>
+    <string name="hello_blank_fragment2">This is Second Fragment</string>
+    <string name="hello_blank_fragment3">This is Third Fragment</string>
+    <string name="hello_blank_fragment4">This is Four Fragment</string>
+</resources>

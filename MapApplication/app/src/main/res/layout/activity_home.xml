@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="7.5dp"
+        android:foregroundGravity="center"
+        card_view:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:id="@+id/mainView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rel"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_bg"
+                android:fontFamily="@font/google_font"
+                android:gravity="center"
+                android:text="INSTRUCTION"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/card_view"
+        android:layout_marginStart="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:layout_marginEnd="7.5dp"
+        android:layout_marginBottom="7.5dp"
+        android:foregroundGravity="center"
+        card_view:cardCornerRadius="6dp">
+
+<!--        <how to navigate by car from your current location to Montclair State University-->
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/google_font"
+            android:text="How to navigate by car from your current location to Montclair State University"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="9.35dp"
+            android:layout_marginTop="18.7dp"
+            android:layout_marginRight="18.7dp"
+            android:layout_marginBottom="18.7dp"
+            android:background="@drawable/blue_fill__rounded_color"
+            android:visibility="invisible"
+            android:text="Drive To MSU" />
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="9.35dp"
+            android:layout_marginTop="18.7dp"
+            android:layout_marginRight="18.7dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="18.7dp"
+            android:background="@drawable/blue_fill__rounded_color"
+            android:text="Drive To MSU" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="273dp"
+                android:background="@drawable/blue_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/google_font"
+                    android:text="IP ADDRESS"
+                    android:textColor="@color/white"
+                    android:textSize="30dp" />
+            </FrameLayout>
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                tools:context=".activity.ForgotPassword">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="36.7dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/blue_border_rounded_cornwe"
+                    app:passwordToggleDrawable="@drawable/password_visibility"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/black"
+                    app:startIconDrawable="@drawable/pass">
+                    <!--input-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="0dp"
+
+                        android:textColorHint="@color/cardview_initial_background">
+
+                        <EditText
+                            android:clickable="false"
+                            style="@style/modifiedEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/ipEdt"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="left"
+                            android:paddingTop="10dp"
+                            android:hint="IP Addess"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="20dp"
+                            android:paddingLeft="17dp"
+                            android:paddingBottom="15dp"
+                            android:text="http://192.168.29.85:9000/"
+                            android:textColor="#000000"
+                            android:textColorHint="#808080"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textSize="17sp"
+                            tools:ignore="UnknownId"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/isubmit"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="@dimen/card"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="18.7dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginRight="9.35dp"
+                    android:layout_marginBottom="18.7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_fill__rounded_color"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="Continue"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_email"
+                    app:layout_constraintWidth_percent="0.7" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

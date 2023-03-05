@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "219571827175",
+    "project_id": "gi-quiz-7ef02",
+    "storage_bucket": "gi-quiz-7ef02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219571827175:android:fc0ca1a5b72d7b543a4d42",
+        "android_client_info": {
+          "package_name": "com.gi.programing_quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219571827175-fuvfs1k27oraejs13s6niq46uav3f8c5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZQDs1aT-lvvf1oIEa1JuuxebxSBHHl9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219571827175-fuvfs1k27oraejs13s6niq46uav3f8c5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

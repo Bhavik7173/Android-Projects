@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/back.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/baseline_more_vert_18.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/circle_outline.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/cursor_color.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/ic_add_circle_black_24dp.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/ic_baseline_date_range_profile.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/ic_baseline_mail_outline_24.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/ic_baseline_smartphone_24.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/ic_baseline_visibility_24.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/ic_calender.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/ic_edit.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/ic_info_outline_black_24dp.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/ic_login_bk.xml" value="0.1335" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/ic_stars_black_24dp.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/ic_subject.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/menu_right_arrow_menu.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/drawable/visible.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/activity_add_achievement.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/activity_add_company_profile.xml" value="0.12158054711246201" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/activity_add_new_inquiry.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/activity_admin_admission.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/activity_admin_home.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/activity_change_password.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/activity_personal_profile.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/activity_rate_us.xml" value="0.8" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/activity_signup.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/fragment_existing_student.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/fragment_search.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/fragment_setting.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/layour_admin_faculty.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/layout_admin_course.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/layout_admin_inquiry.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/layout_feedback.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/layout_forgotpassword.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/layout_personalprofile.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/pickerdialog.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/layout/successdialog.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/menu/activity_main_drawer.xml" value="0.4" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/menu/bottom_nav_menu.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/menu/course_drawer.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/menu/faculty_drawer.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/menu/inquiry_drawer.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/GInquiry/app/src/main/res/menu/logout_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

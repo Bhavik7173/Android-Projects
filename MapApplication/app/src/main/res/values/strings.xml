@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MapApplication</string>
+    <string name="destination">Destination</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string-array name="zoomlevel">
+        <item>World</item>
+        <item>Landmass/continent</item>
+        <item>City</item>
+        <item>Streets</item>
+        <item>Buildings</item>
+    </string-array>
+</resources>

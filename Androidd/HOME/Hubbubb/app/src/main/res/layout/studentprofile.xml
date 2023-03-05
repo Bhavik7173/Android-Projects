@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/contentBodyColor"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/contentBodyColor"
+            >
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+
+                android:id="@+id/Image"
+                android:background="@color/contentBodyColor"
+                />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/imageloading"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/classImageView"
+                android:src="@drawable/ic_class_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/classImageView"
+                android:text="Class" />
+
+            <TextView
+                android:id="@+id/Class"
+                android:text=""
+                android:layout_toRightOf="@id/classImageView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/divImageView"
+                android:src="@drawable/ic_class_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Division"
+                android:layout_toRightOf="@id/divImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/Div"
+                android:text="A"
+                android:layout_toRightOf="@id/divImageView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/mentorImageView"
+                android:src="@drawable/ic_accessible_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Mentor"
+                android:layout_toRightOf="@id/mentorImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/Mentor"
+                android:text=""
+                android:layout_toRightOf="@id/mentorImageView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

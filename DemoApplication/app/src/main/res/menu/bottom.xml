@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/music"
+        android:title="My Music" />
+
+    <item
+        android:id="@+id/job"
+        android:icon="@drawable/online"
+        android:title="Online" />
+
+    <item
+        android:id="@+id/event"
+        android:icon="@drawable/search"
+        android:title="Search" />
+
+
+
+
+</menu>

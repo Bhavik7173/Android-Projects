@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="350dp" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="2dp" android:layout_marginBottom="2dp" android:layout_weight="8">
+            <p068de.hdodenhof.circleimageview.CircleImageView android:id="@+id/student_image" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_empty_profile_image"/>
+            <TextView android:textSize="10dp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/student_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Student Name" android:fontFamily="@font/bw_bold" android:paddingStart="6dp" android:paddingEnd="2dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+        <TextView android:textSize="10dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/gain_mark" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="Gained" android:layout_weight="2" android:fontFamily="@font/bw_bold"/>
+        <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+        <TextView android:textSize="10dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/pr" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="%" android:layout_weight="2" android:fontFamily="@font/bw_bold"/>
+        <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+    </LinearLayout>
+    <View android:background="@color/light_grey" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.3"/>
+</LinearLayout>

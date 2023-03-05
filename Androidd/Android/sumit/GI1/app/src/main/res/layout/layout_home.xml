@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/loginParent"
+    android:layout_margin="15dp"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.NoActionBar">
+
+
+    <TextView
+        style="@style/TitleText"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="GI WALLET"
+        android:textColor="@color/main" />
+
+    <androidx.cardview.widget.CardView
+        style="@style/loginCard"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:layout_marginBottom="@dimen/loginViewsMargin"
+        android:background="@color/whiteCardColor"
+        android:elevation="5dp"
+        app:cardBackgroundColor="@color/main1"
+        app:cardCornerRadius="@dimen/loginCardRadius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/idEdtPhoneNumber"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:textColorHint="@color/main"
+                app:passwordToggleDrawable="@drawable/show_contact_selector">
+
+                <EditText
+                    android:id="@+id/mobile_no1"
+                    style="@style/modifiedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="+91 | Enter Mobile No"
+                    android:inputType="number"
+                    android:textColor="@color/main" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputAmount"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="Enter Your Amount"
+                android:textColorHint="@color/main">
+
+                <EditText
+                    android:id="@+id/amount"
+                    style="@style/modifiedEditText"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="@color/main" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/send"
+                    style="@style/sendButton"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="send"
+                    android:text="Send"
+                    android:textColor="@color/whiteCardColor" />
+
+                <Button
+                    android:id="@+id/receive"
+                    style="@style/sendButton"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="receive"
+                    android:text="Receive"
+                    android:textColor="@color/whiteCardColor" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="300dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/qr_code"
+                style="@style/sendButton"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:onClick="scanqr"
+                android:text="SCAN ANY QR"
+                android:textColor="@color/whiteCardColor" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

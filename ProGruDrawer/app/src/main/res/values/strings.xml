@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProGruDrawer</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Home</item>
+        <item>About Us</item>
+        <item>Contact Us</item>
+        <item>Feedback</item>
+        <item>Logout</item>
+    </string-array>
+</resources>

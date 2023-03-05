@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:id="@+id/profileicon"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:id="@+id/email"
+        android:textStyle="bold"
+        android:textColor="@color/blackCardColor"
+        android:text="Email"
+        android:gravity=""
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"/>
+
+</LinearLayout>

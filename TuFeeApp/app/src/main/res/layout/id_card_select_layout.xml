@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/fragment_container_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:text="Select Card Design" android:fontFamily="@font/bw_bold" android:textAlignment="center"/>
+    <CheckBox android:layout_gravity="center" android:id="@+id/isOnWhatsApp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Check Me For send ID card on whatsApp Directly"/>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:padding="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/port_one" android:padding="@dimen/_6sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/port_one" android:adjustViewBounds="true" android:layout_weight="1"/>
+        <ImageView android:id="@+id/port_two" android:padding="@dimen/_6sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/port_two" android:adjustViewBounds="true" android:layout_weight="1"/>
+        <ImageView android:id="@+id/port_three" android:padding="@dimen/_6sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/port_three" android:adjustViewBounds="true" android:layout_weight="1"/>
+        <ImageView android:id="@+id/port_four" android:padding="@dimen/_6sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/port_four" android:adjustViewBounds="true" android:layout_weight="1"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ImageView android:layout_gravity="center" android:id="@+id/land_one" android:padding="@dimen/_6sdp" android:layout_width="@dimen/_120sdp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp" android:src="@drawable/landscape_id_card_bg" android:adjustViewBounds="true"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

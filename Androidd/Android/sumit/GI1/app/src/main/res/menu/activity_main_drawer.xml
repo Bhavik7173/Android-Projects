@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account_18dp"
+            android:title="Your Acccount" />
+        <item
+            android:id="@+id/nav_bank_account"
+            android:icon="@drawable/ic_bank_detail"
+            android:title="Default Bank Account" />
+
+        <item
+            android:id="@+id/nav_order_booking"
+            android:icon="@drawable/ic_order_booking"
+            android:title="Orders &amp; Booking" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_setting"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_help_support"
+                android:icon="@drawable/ic_help_center"
+                android:title="24*7 Help &amp; Support" />
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_contactus"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/nav_rateus"
+                android:icon="@drawable/ic_rateus"
+                android:title="Rate Us" />
+        </menu>
+    </item>
+
+</menu>
+
+    <!--<item
+                android:id="@+id/nav_qrcode"
+                android:icon="@drawable/ic_qr_code"
+                android:title="QR Code" />
+                -->

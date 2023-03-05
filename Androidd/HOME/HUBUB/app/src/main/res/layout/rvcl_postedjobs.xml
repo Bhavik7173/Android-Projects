@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteCardColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/loginCard"
+        app:cardCornerRadius="@dimen/loginCardRadius"
+        android:elevation="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:layout_marginBottom="@dimen/loginViewsMargin"
+        android:background="@color/whiteCardColor">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#960808"
+            android:id="@+id/view_topBorder"/>
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#960808"
+            android:id="@+id/Parrot_Color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#960808"
+            android:layout_gravity="bottom"/>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#960808"
+            android:layout_gravity="right"/>
+
+        <LinearLayout
+            style="@style/linearParent"
+            android:layout_gravity="center"
+            android:background="@color/whiteCardColor"
+            android:padding="@dimen/loginViewsMargin">
+
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/JT"
+                android:textStyle="bold"
+                android:text="Job Title"
+                android:textAllCaps="true"
+                android:textSize="22sp"
+                style="@style/headerTextPrimary"
+                android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+            <ImageView
+                android:id="@+id/Img"
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputEmail"
+                    android:textColorHint="#960808"
+                    style="@style/parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/JSD"
+                        style="@style/modifiedEditText"
+                        android:textColor="#960808"
+                        android:inputType="text"
+                        android:editable="false"
+                        android:textStyle="bold"
+                        android:maxLines="1"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#960808"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Start Date"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:textColorHint="#960808"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp">
+                    <EditText
+                        style="@style/modifiedEditText"
+                        android:id="@+id/location"
+                        android:textStyle="bold"
+                        android:textColor="#960808"
+                        android:maxLines="1"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#960808"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Location"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/ic_account_box_black_24dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColorHint="#960808">
+
+                    <EditText
+                        android:id="@+id/JTA"
+                        style="@style/modifiedEditText"
+                        android:maxLines="1"
+                        android:textColor="#960808"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#960808"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="      Total\nApplications"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/JMD"
+                style="@style/loginButton"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:text="MORE DETAILS"
+                android:textColor="@color/whiteCardColor" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

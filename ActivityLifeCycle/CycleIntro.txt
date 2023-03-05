@@ -1,0 +1,78 @@
+LifeCycle mehtod of Activity
+	A ==> B
+	B ==> A
+	
+	Known as callback Method
+	Android Application -> Run -> Android Machine Platform ->Dalvik Virtual Machine
+	Request to Java Virtual Machine in java
+	
+	1.onCreate()
+	2.onStart()
+	3.onResume()
+	4.onPause()
+	5.onResume()
+	6.onRestart()
+	7.onDestroy()
+	
+	call by activity Means MainActivity
+	class MainActivity extends AppCompactActivity
+=============================================================================================
+
+MainActivity => FirstActivity
+	navigate : Intent
+	putExtra("Key","data")
+	startActivity(intent)
+	
+MainActivity <= FirstActivity
+	plz press back button
+
+MainActivity <= FirstActivity (with data)
+	def : onBackPressed
+	intent
+	putExtra("key","data")
+	setResult(rst_code,intent_obj);
+=====================================================================================================
+MainActivity
+	onCreate
+	onStart
+	onResume
+	
+	onPause
+	onStop
+	
+FirstActivity
+	onCreate
+	onStart
+	onResume
+	
+After back button pressed in FirstActivity
+
+FirstActivity
+	onPause
+	onStop
+	onDestroy
+
+MainActivity
+	onRestart
+	onStart
+	onResume
+=============================================================================================
+
+MainActivity => FirstActivity
+	navigate : Intent
+	putExtra("Key","data")
+	startActivity(intent)
+	
+MainActivity <= FirstActivity (without data)
+	plz press back button
+
+MainActivity <= FirstActivity (with data)
+	def : onBackPressed
+	intent
+	putExtra("key","data")
+	setResult(rst_code,intent_obj);
+	
+	onActivityResult -> call by OS // not lifecycle
+	startActivity(i)
+	startActivityForResult(i,10)
+=====================================================================================================

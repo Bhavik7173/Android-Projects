@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="350dp" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/bg" android:background="@drawable/fee_receipt_bg" android:layout_width="350dp" android:layout_height="0dp" android:alpha="0.3" app:layout_constraintBottom_toBottomOf="@+id/data_lay" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/data_lay" android:layout_width="350dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="18dp" android:textColor="@color/black" android:layout_gravity="center" android:paddingTop="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Registration Form" android:fontFamily="@font/bw_bold" android:textAlignment="center"/>
+        <TextView android:textSize="10dp" android:textColor="@color/black" android:id="@+id/registration_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Date: 24/01/2022" android:fontFamily="@font/bw_bold" android:layout_marginStart="8dp"/>
+        <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="6dp" android:layout_marginBottom="6dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="Name" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/student_name" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="Father" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/father_name" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="Mother" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/mother_name" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="DOB" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/date_of_birth" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="Gender" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/gender" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="Aadhar" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/aadhar_number" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="Caste" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/caste" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="WhatsApp" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/whats_app" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="SMS" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/sms" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="Address" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/address" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="School" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/school_name" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="Roll No" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/roll_no" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:gravity="end" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="Standard" android:layout_weight="2" android:fontFamily="@font/bw_bold" android:layout_marginEnd="6dp"/>
+                <View android:background="@color/light_grey" android:layout_width="1dp" android:layout_height="match_parent" android:alpha="0.3"/>
+                <TextView android:textSize="10dp" android:textColor="@color/primaryColor" android:id="@+id/standard" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Student Name" android:layout_weight="6" android:fontFamily="@font/bw_bold" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <View android:background="@color/primaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <ImageView android:id="@+id/sign" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:adjustViewBounds="true" android:layout_weight="1"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="end" android:id="@+id/textView22" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Thank You" android:layout_marginEnd="16dp"/>
+                <TextView android:textColor="@color/black" android:gravity="end" android:id="@+id/name_owner_report_card" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="Class Owner Name" android:layout_marginEnd="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@+id/institute_lay" android:background="@color/blue_grey_500" android:layout_width="350dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/data_lay">
+        <p068de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="center" android:id="@+id/coaching_logo_report_card" android:background="@drawable/ic_empty_profile_image" android:layout_width="56dp" android:layout_height="56dp" android:layout_margin="8dp"/>
+        <LinearLayout android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/report_coaching_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Coaching Center Name" android:fontFamily="@font/bw_bold"/>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/address_report_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Address" android:fontFamily="@font/bw_medium"/>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/mail_id_report_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mail Address" android:fontFamily="@font/bw_medium"/>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/mobile_number_report_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mobile Number" android:fontFamily="@font/bw_bold"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

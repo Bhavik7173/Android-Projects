@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MapsDirection</string>
+    <string name="google_maps_key">AIzaSyDrMBSYQ054hHVjWdES5L5I5S6N3glraYI</string>
+    <string name="destination">Destination</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string-array name="zoomlevel">
+        <item>World</item>
+        <item>Landmass/continent</item>
+        <item>City</item>
+        <item>Streets</item>
+        <item>Buildings</item>
+    </string-array>
+</resources>

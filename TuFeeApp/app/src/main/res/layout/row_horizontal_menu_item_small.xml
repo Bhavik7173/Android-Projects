@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/view_parent" android:clickable="true" android:layout_width="@dimen/column_size_small" android:layout_height="wrap_content" android:minHeight="@dimen/row_horizontal_size_small">
+    <ImageView android:id="@+id/img_menu_item" android:layout_width="@dimen/menu_size_horizontal_small" android:layout_height="@dimen/menu_size_horizontal_small" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/menu_text_size_horizontal_small" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/txt_title_menu_item" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="@integer/horizontal_menu_max_lines" android:layout_below="@+id/img_menu_item" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

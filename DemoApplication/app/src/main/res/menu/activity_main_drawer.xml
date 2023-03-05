@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/first"
+            android:icon="@drawable/download"
+            android:title="Downloads" />
+        <item
+            android:id="@+id/second"
+            android:icon="@drawable/feedback"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/third"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/four"
+            android:icon="@drawable/languages"
+            android:title="Languages" />
+        <item
+            android:id="@+id/five"
+            android:icon="@drawable/star"
+            android:title="PRO Center" />
+    </group>
+</menu>

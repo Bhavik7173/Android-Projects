@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/GISurat/Android/SQLiteApp/app/src/main/res/drawable-v24/blue_fill__rounded_color.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/SQLiteApp/app/src/main/res/drawable-v24/cursor_color.xml" value="0.15" />
+        <entry key="..\:/GISurat/Android/SQLiteApp/app/src/main/res/layout/activity_display_contact.xml" value="0.22826086956521738" />
+        <entry key="..\:/GISurat/Android/SQLiteApp/app/src/main/res/layout/activity_display_student.xml" value="0.22826086956521738" />
+        <entry key="..\:/GISurat/Android/SQLiteApp/app/src/main/res/layout/activity_main.xml" value="0.12158054711246201" />
+        <entry key="..\:/GISurat/Android/SQLiteApp/app/src/main/res/layout/activity_splash.xml" value="0.21614583333333334" />
+        <entry key="..\:/GISurat/Android/SQLiteApp/app/src/main/res/layout/list_item_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/GISurat/Android/SQLiteApp/app/src/main/res/menu/menu_display_contact.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/SQLiteApp/app/src/main/res/menu/menu_main.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

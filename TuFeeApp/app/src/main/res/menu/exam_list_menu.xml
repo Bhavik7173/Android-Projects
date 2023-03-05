@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/generate_exam_report" android:title="@string/generate_report"/>
+    <item android:id="@+id/sms" android:title="@string/send_sms"/>
+    <item android:id="@+id/whats_app" android:title="@string/whats_app"/>
+</menu>

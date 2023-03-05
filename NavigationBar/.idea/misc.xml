@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/drawable/blue_fill__rounded_color.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/drawable/contacts_24.xml" value="0.121" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/activity_detail.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/activity_main.xml" value="0.12158054711246201" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/activity_rate_us_fragment.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/confirmdialog.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/fragment_aboutus.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/fragment_blank.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/fragment_contactus.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/fragment_feedback.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/fragment_home.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/layout_feedback.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/layout_problem_signup.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/layout_rateus.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/list_view_item_row.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/rateus.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/successdialog.xml" value="0.25" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/layout/toolbar.xml" value="0.10989583333333333" />
+        <entry key="..\:/GISurat/Android/NavigationBar/app/src/main/res/menu/navigation_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

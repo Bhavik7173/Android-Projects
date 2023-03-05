@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:background="@color/whiteCardColor"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="PERSONAL PROFILE"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/Name"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:hint="Name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/DOB"
+                android:maxLines="1"
+                android:editable="false"
+                android:hint="Date Of Birth"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColor="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <TextView
+                style="@style/modifiedEditText"
+                android:id="@+id/Gender"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:textColorHint="#960808"
+                android:layout_marginLeft="5sp"
+                android:maxLines="1"
+                android:hint="Gender"/>
+
+            <EditText
+                android:id="@+id/Img"
+                style="@style/modifiedEditText"
+                android:editable="false"
+                android:hint="Image"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/loginViewsMargin"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/Gen"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    style="@style/radio"
+                    android:layout_marginRight="@dimen/loginViewsMargin"
+                    android:text="MALE"></RadioButton>
+
+                <RadioButton
+                    style="@style/radio"
+                    android:layout_marginLeft="@dimen/loginViewsMargin"
+                    android:text="FEMALE"></RadioButton>
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/g"
+                android:textColor="#960808"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/CN1"
+                android:maxLines="1"
+                android:text="+91"
+                android:freezesText="true"
+                android:maxLength="13"
+                android:phoneNumber="true"
+                android:hint="Contact No. 1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/CN2"
+                android:maxLines="1"
+                android:maxLength="13"
+                android:text="+91"
+                android:freezesText="true"
+                android:phoneNumber="true"
+                android:hint="Contact No. 2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColor="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <TextView
+                style="@style/modifiedEditText"
+                android:id="@+id/S"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:textColorHint="#960808"
+                android:layout_marginLeft="5sp"
+                android:maxLines="1"
+                android:hint="Status"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/loginViewsMargin"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/Status"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    style="@style/radio"
+                    android:layout_marginRight="@dimen/loginViewsMargin"
+                    android:text="STUDENT"></RadioButton>
+
+                <RadioButton
+                    style="@style/radio"
+                    android:layout_marginLeft="@dimen/loginViewsMargin"
+                    android:text="ALUMNI"></RadioButton>
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/s"
+                android:textColor="#960808"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/Address"
+                android:maxLines="1"
+                android:hint="Address"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/Hobby"
+                android:maxLines="1"
+                android:hint="Hobby"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/Interest"
+                android:maxLines="1"
+                android:hint="Interest"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:hint="Password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            style="@style/parent"
+            android:id="@+id/ph"
+            android:layout_width="wrap_content"
+            android:background="@color/whiteCardColor"
+            android:textSize="10dp"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:drawableStart="@drawable/ic_info_outline_black_24dp"
+            android:text="   Password must contain minimum 8 characters with atleast 1 uppercase alphabet(A-Z), 1 lower case alphabet(a-z), 1 digit\n    (0-9) and 1 special character (@#$%_^+=)"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:textColorHint="#960808"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:id="@+id/CPassword"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:hint="Confirm Password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="next"
+            android:textColor="@color/whiteCardColor"
+            android:text="NEXT" />
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

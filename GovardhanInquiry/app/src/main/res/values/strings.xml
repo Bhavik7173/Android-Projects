@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">GI Inquiry</string>
+    <string name="app_name1">Govardhan Institute</string>
+    <string name="dummy_text">A community with high expectation and high academic achievement.</string>
+    <string name="shared_file">MyFile</string>
+    <!--    <string name="IP">http://localhost:3306/phpmyadmin/index.php?route=/database/structure&amp;server=1&amp;db=inquiry</string>-->
+    <!--    <string name="IP">http://192.168.29.85/Inquiry_app/</string>-->
+    <string name="IP">http://192.168.99.195/Inquiry_app/</string>
+    <string-array name="spinner">
+        <item>Admin</item>
+        <item>Consellor</item>
+        <item>Manager</item>
+        <item>Faculty</item>
+    </string-array>
+    <string-array name="aspinner">
+        <item>UpComing Batch</item>
+        <item>Regular Batch</item>
+        <item>Existing Batch</item>
+    </string-array>
+    <!--    AdminHome-->
+    <string name="inquiry">Inquiry</string>
+    <string name="course">Course</string>
+    <string name="fee">Fee</string>
+    <string name="report">Report</string>
+    <string name="faculty">Faculty</string>
+    <string name="admission">Admission</string>
+    <string name="runningbatch">Running Batch</string>
+    <string name="offers">Offers</string>
+    <string name="cardview_radius_seekbar_text">Radius</string>
+    <string name="cardview_elevation_seekbar_text">Elevation</string>
+
+    <!--    ConsellorHome-->
+    <string name="inquiry1">Inquiry</string>
+    <string name="upcoming">Up Coming Batch</string>
+    <string name="regularbatch">Regular Batch</string>
+    <string name="allbatch">All Batch</string>
+
+    <string name="facebook_app_id">5269590079821320</string>
+    <string name="facebook_client_token">51a8cdd6a5746ff2ab2e5f6bcad11725</string>
+
+    <string name="intsa_client_id">911a50aca083e2b33d5a80c509e35df7</string>
+    <string name="redirect_url">https://instagram.com/</string>
+    <string name="base_url">https://api.instagram.com/</string>
+    <string name="get_user_info_url">https://api.instagram.com/v1/users/self/?access_token=</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_email_hint">Email</string>
+    <string name="NewAdmission">New Admission</string>
+    <string name="inquiry_from_fragment">From Inquiry</string>
+    <string name="inquiry_existing_Student">Existing Student</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string-array name="time_spinner">
+        <item>Select Time</item>
+        <item>09:00 AM - 12:00 PM</item>
+        <item>12:00 PM - 03:00 PM</item>
+        <item>03:00 PM - 06:00 PM</item>
+        <item>06:00 PM - 09:00 PM</item>
+    </string-array>
+</resources>

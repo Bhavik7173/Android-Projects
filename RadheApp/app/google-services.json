@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "976798031353",
+    "project_id": "radheapp-ebf87",
+    "storage_bucket": "radheapp-ebf87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976798031353:android:1b4c16920d680bc510f128",
+        "android_client_info": {
+          "package_name": "com.gi.radheapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976798031353-vthe71ea9qc9u4ghtm0rrc0ff8ocvq0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPZdX33iYCarYTMQPSGcqVrZ3YMBUm_XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976798031353-vthe71ea9qc9u4ghtm0rrc0ff8ocvq0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

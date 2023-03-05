@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "712861235577",
+    "project_id": "otpverification-2d65a",
+    "storage_bucket": "otpverification-2d65a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712861235577:android:cada129050e53de7d057a8",
+        "android_client_info": {
+          "package_name": "com.example.otpverification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712861235577-foap59vhrikui17i05967f2g48nf4k5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCcYxklJ4hWMoJPCjQVZnpHvhtyOq7UF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712861235577-foap59vhrikui17i05967f2g48nf4k5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712861235577:android:0ed76e56c5ab04d9d057a8",
+        "android_client_info": {
+          "package_name": "com.example.wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712861235577-foap59vhrikui17i05967f2g48nf4k5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCcYxklJ4hWMoJPCjQVZnpHvhtyOq7UF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712861235577-foap59vhrikui17i05967f2g48nf4k5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

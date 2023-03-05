@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_8sdp" app:cardCornerRadius="@dimen/_8sdp">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingTop="@dimen/_16sdp" android:paddingBottom="@dimen/_16sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/_8sdp" android:paddingEnd="@dimen/_8sdp">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:padding="@dimen/_4sdp" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_32sdp" android:layout_margin="@dimen/_6sdp" android:src="@drawable/ic_company" android:tint="@color/primaryColor"/>
+            <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/_6sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dhvanil_infotech" android:fontFamily="@font/bw_medium"/>
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_light" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/android_app_specialist" android:fontFamily="@font/bw_regular"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_32sdp" android:layout_margin="@dimen/_6sdp" android:src="@drawable/ic_location" android:tint="@color/primaryColor"/>
+            <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/_6sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/address_of_company" android:fontFamily="@font/bw_medium"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+            <ImageView android:layout_gravity="center" android:padding="@dimen/_6sdp" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_32sdp" android:layout_margin="@dimen/_6sdp" android:src="@drawable/ic_mail" android:tint="@color/primaryColor"/>
+            <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/_6sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mail_of_company" android:fontFamily="@font/bw_medium"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@+id/whatsapp_connect" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+            <ImageView android:layout_gravity="center" android:padding="@dimen/_6sdp" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_32sdp" android:layout_margin="@dimen/_6sdp" android:src="@drawable/ic_whatsapp" android:tint="@color/primaryColor"/>
+            <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/_6sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="+91 7041524937" android:fontFamily="@font/bw_medium"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>

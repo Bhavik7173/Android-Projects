@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    tools:context=".MainActivity">
+
+<ScrollView
+android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:layout_margin="15dp">
+<LinearLayout
+android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<TextView
+android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ADD NEW RECIPES"
+    android:textSize="10pt"
+    android:textColor="@color/purple_200"/>
+
+<TextView
+android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/purple_500"
+    android:layout_marginTop="10dp"/>
+<LinearLayout
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+<LinearLayout
+android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#E0E0E0">
+<ImageView
+android:id="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_baseline_image_24"/>
+    </LinearLayout>
+<TextView
+android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/purple_500"
+    android:layout_marginBottom="50dp"/>
+    </LinearLayout>
+<LinearLayout
+android:id="@+id/layout_browsefile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/purple_500"
+    android:layout_marginTop="15dp">
+<TextView
+android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BROWSE FILE"
+    android:textColor="@color/white"
+    android:textSize="10pt"
+    android:textStyle="bold"
+    android:padding="10dp"/>
+    </LinearLayout>
+<TextView
+android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Enter The Recipe Title"
+    android:textSize="8pt"
+    android:textColor="@color/purple_500"
+    android:layout_marginTop="30dp"/>
+<EditText
+android:id="@+id/recipe_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Full Name"
+    android:padding="10dp"
+    android:layout_marginTop="5dp"/>
+<TextView
+android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add Description"
+    android:textSize="8pt"
+    android:textColor="@color/purple_500"
+    android:layout_marginTop="10dp"/>
+<EditText
+android:id="@+id/recipe_description"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="start"
+    android:inputType="textMultiLine"
+    android:hint="Enter Description here..."
+    android:padding="10dp"
+    android:layout_marginTop="5dp"/>
+<LinearLayout
+android:id="@+id/submit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/purple_500"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp">
+<TextView
+android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SUBMIT"
+    android:textColor="@color/white"
+    android:textSize="10pt"
+    android:textStyle="bold"
+    android:padding="10dp"/>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

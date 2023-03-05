@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/drawable/ic_login_bk.xml" value="0.1335" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/drawable/menu_right_arrow_menu.xml" value="0.1335" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_add_company_profile.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_change_password.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_feedback.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_hubs_home.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_job_details.xml" value="0.2" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_personal_profile.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_pro_profile_details.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_recycler__view__company__profile.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_recycler__view__job.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_recycler__view__skills.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/app_bar_main.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/content_main.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/fragment_account.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/fragment_search.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/item.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/layout_feedback.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/layout_login.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/layout_personalprofile.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/layout_problem_signup.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/layout_rateus.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/layout_register.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/logindialog.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/rateus.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/studentprofile.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/layout/successdialog.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/menu/activity_faculty_drawer.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/menu/activity_student_drawer.xml" value="0.25" />
+        <entry key="..\:/Androidd/HOME/HUBUB/app/src/main/res/menu/bottom_navigation.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

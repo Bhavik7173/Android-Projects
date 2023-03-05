@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9e0b0b</color>
+    <color name="colorPrimaryDark">#a60a0a</color>
+    <color name="colorAccent">#960808</color>
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#000</color>
+    <color name="primaryTextColor">#960808</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <color name="main">#960808</color>
+    <color name="sec">#96afd9</color>
+    <color name="mid">#d45050</color>
+    <color name="light">#B5C7D3</color>
+
+    <color name="grey">#FF4C4951</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="transparent">#00000000</color>
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+    <color name="blackCardColor">#000</color>
+    <color name="whiteBodyColor">#FCFCFC</color>
+    <color name="bottomNavigationTextColor">#B2B2B2</color>
+    <color name="bottomNavigationTintColor">#B2B2B2</color>
+    <color name="bottomNavigationSelectedColor">#960808</color>
+
+    <color name="contentBodyColor">#FCFCFC</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="miniTitleColor">#6F6A6A</color>
+    <color name="bottomNavigationBackground">#F7F7F7</color>
+    <color name="contentStatusBar">#f8cbb3</color>
+
+    <color name="frutorial_title">#4c4c4c</color>
+
+    <color name="cardColorTeal">#09CD95</color>
+    <color name="cardColorOrange">#FF651B</color>
+    <color name="cardColorYellow">#FF991F</color>
+    <color name="cardColorViolet">#8F51E3</color>
+    <color name="cardColorRed">#F94172</color>
+</resources>

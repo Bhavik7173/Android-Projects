@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rounded_progress_bar_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:id="@+id/rounded_progress_bar" android:layout_width="match_parent" android:layout_height="match_parent" android:progressDrawable="@drawable/rounded_progress_bar_drawable" app:layout_constraintTop_toTopOf="0" style="@style/Widget.ProgressBar.Horizontal"/>
+    <com.mackhartley.roundedprogressbar.ProgressTextOverlay android:id="@+id/progress_text_overlay" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="@+id/rounded_progress_bar" app:layout_constraintTop_toTopOf="@+id/rounded_progress_bar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

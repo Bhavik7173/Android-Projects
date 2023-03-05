@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/whiteCardColor"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Problem!"
+            android:id="@+id/header"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/msg"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:textColor="@color/colorAccent"
+            android:text="We can't find account with\n zeus16f@gmail.com. Try another email,\nor if you don't have an account,\n you can sign up."
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                style="@style/loginButton"
+                android:layout_gravity="center"
+                android:id="@+id/Yes"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:layout_width="140dp"
+                android:textSize="14dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:onClick="Yes"
+                android:textColor="@color/whiteCardColor"
+                android:text="Try Again" />
+            <Button
+                style="@style/loginButton"
+                android:layout_gravity="center"
+                android:id="@+id/No"
+                android:textAllCaps="false"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="3dp"
+                android:onClick="No"
+                android:textSize="14dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="140dp"
+                android:textColor="@color/whiteCardColor"
+                android:text="Sign Up" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

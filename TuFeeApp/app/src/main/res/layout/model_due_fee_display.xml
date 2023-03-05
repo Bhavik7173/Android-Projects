@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/batch_name" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Batch Name" android:layout_weight="1"/>
+    <TextView android:textSize="12dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/start_date" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Due From" android:layout_weight="1"/>
+    <TextView android:textSize="12dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/end_date" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Due Till" android:layout_weight="1"/>
+    <TextView android:textSize="12dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/due_amount" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Due Amount" android:layout_weight="1"/>
+</LinearLayout>

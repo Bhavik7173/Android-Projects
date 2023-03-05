@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/_8sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/exam_date" android:background="@drawable/round_bg_present" android:paddingTop="@dimen/_2sdp" android:paddingBottom="@dimen/_2sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_4sdp" android:text="12/12/2021" android:fontFamily="@font/bw_medium" android:paddingStart="@dimen/_8sdp" android:paddingEnd="@dimen/_8sdp" android:layout_marginEnd="@dimen/_8sdp" android:backgroundTint="@color/primaryColor"/>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:padding="@dimen/_4sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/border_card_bg" android:layout_width="@dimen/_40sdp" android:layout_height="wrap_content">
+            <TextView android:id="@+id/gain_mark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:textAlignment="center" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_4sdp"/>
+            <View android:background="@color/text_color_medium" android:layout_width="match_parent" android:layout_height="0.5dp" android:alpha="0.4"/>
+            <TextView android:id="@+id/total_mark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:textAlignment="center" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_4sdp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/_4sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_6sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_medium" android:id="@+id/exam_topic" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Exam Topic" android:fontFamily="@font/bw_medium"/>
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/text_color_medium" android:id="@+id/batch_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Batch Name" android:alpha="0.8" android:fontFamily="@font/bw_medium"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <LinearLayout android:orientation="vertical" android:id="@+id/remark_lay" android:padding="@dimen/_4sdp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_8sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Remarks" android:fontFamily="@font/bw_regular"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_medium" android:id="@+id/remark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Exam Remarks" android:fontFamily="@font/bw_medium"/>
+    </LinearLayout>
+</LinearLayout>

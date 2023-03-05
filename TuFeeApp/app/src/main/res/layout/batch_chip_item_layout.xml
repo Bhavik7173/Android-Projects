@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.google.android.material.chip.Chip android:textColor="@color/text_color_medium" android:id="@+id/batch_chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_4sdp" app:checkedIconEnabled="true" app:checkedIconTint="@color/text_color_medium" app:iconStartPadding="@dimen/_6sdp" app:textEndPadding="@dimen/_8sdp" app:textStartPadding="@dimen/_8sdp" style="@style/Widget.MaterialComponents.Chip.Choice"/>
+</LinearLayout>

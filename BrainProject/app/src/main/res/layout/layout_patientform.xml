@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="@color/whiteCardColor"
+    android:elevation="5dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:background="@color/whiteCardColor"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:layout_marginTop="20dp"
+            android:text="PATIENT DETAIL" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/cardview_initial_background">
+
+            <EditText
+                android:id="@+id/pnameEdt"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:hint="Name"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/cardview_initial_background">
+
+            <EditText
+                android:id="@+id/ageEdt"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:inputType="number"
+                android:hint="Age" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/cardview_initial_background">
+
+            <EditText
+                android:id="@+id/pmobnoEdt"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="number
+"
+                android:hint="Mobile Number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top"
+            android:textColor="@color/cardview_initial_background">
+
+            <TextView
+                android:id="@+id/Gender"
+                style="@style/modifiedEditText"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="Gender"
+                android:maxLines="1"
+                android:textColorHint="@color/cardview_initial_background" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/loginViewsMargin"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/Gen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    style="@style/radio"
+                    android:layout_marginRight="@dimen/loginViewsMargin"
+                    android:text="MALE" />
+
+                <RadioButton
+                    style="@style/radio"
+                    android:layout_marginLeft="@dimen/loginViewsMargin"
+                    android:selectAllOnFocus="true"
+                    android:text="FEMALE" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/cardview_initial_background" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/cardview_initial_background">
+
+            <EditText
+                android:id="@+id/image"
+                android:clickable="false"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Select Image" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/cardview_initial_background">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/pimageView"
+                style="@style/modifiedEditText"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/psubmitBtn"
+                style="@style/loginButton"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:onClick="SignupButton"
+                android:text="Submit"
+                android:textColor="@color/whiteCardColor" />
+
+            <Button
+                android:id="@+id/presetbtn"
+                style="@style/loginButton"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:onClick="Reset"
+                android:text="Reset"
+                android:textColor="@color/whiteCardColor" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

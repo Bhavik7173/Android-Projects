@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="350dp" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/bg" android:background="@drawable/fee_receipt_bg" android:layout_width="350dp" android:layout_height="0dp" android:alpha="0.3" app:layout_constraintBottom_toBottomOf="@+id/data_lay" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/data_lay" android:layout_width="350dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="horizontal" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:baselineAligned="false">
+            <ImageView android:id="@+id/teacher_image" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="4dp" android:scaleType="centerCrop" android:contentDescription="@string/app_name" app:srcCompat="@drawable/ic_empty_profile_image"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp">
+                <TextView android:textSize="14dp" android:textColor="@color/black" android:gravity="start" android:id="@+id/staff_name_report_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Teacher Name" android:maxLines="1" android:fontFamily="@font/bw_bold" app:layout_constraintEnd_toEndOf="@+id/cardView" app:layout_constraintStart_toStartOf="@+id/cardView" app:layout_constraintTop_toBottomOf="@+id/cardView"/>
+                <TextView android:textSize="12dp" android:textColor="@color/black" android:gravity="start" android:id="@+id/position" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Position" android:maxLines="1" android:fontFamily="@font/bw_regular"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="18dp" android:textColor="@color/black" android:layout_gravity="center" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp" android:text="Salary Slip" android:fontFamily="@font/bw_bold" android:textAlignment="center"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/black" android:id="@+id/payment_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="6dp" android:text="Paid On : 10-April-21" android:fontFamily="@font/bw_bold" android:layout_marginStart="12dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.5"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/black" android:gravity="center" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Paid\10From" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+                <TextView android:textColor="@color/black" android:gravity="center" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Paid\10Till" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+                <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Deduction" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+                <TextView android:textColor="@color/black" android:gravity="center" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Paid\10Amount" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+            </LinearLayout>
+            <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.5"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/salary_from" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/salary_till" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+                <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/salary_deduction" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/salary_paid" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="@font/bw_medium"/>
+            </LinearLayout>
+            <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.5"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4">
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/discount_text" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Mode" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/payment_mode" android:padding="4dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="" android:layout_weight="1" android:fontFamily="@font/bw_regular"/>
+                <TextView android:textColor="@color/black" android:gravity="center" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Total Paid" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/total_paid_salary" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:fontFamily="@font/bw_bold"/>
+            </LinearLayout>
+            <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.5"/>
+        </LinearLayout>
+        <TextView android:textColor="@color/black" android:id="@+id/remarks" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="24dp" android:fontFamily="@font/bw_medium"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/sign" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:adjustViewBounds="true" android:layout_weight="1"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="end" android:id="@+id/textView22" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Thank You" android:layout_marginEnd="16dp"/>
+                <TextView android:textColor="@color/black" android:gravity="end" android:id="@+id/name_owner_report_card" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="Class Owner Name" android:layout_marginEnd="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@+id/institute_lay" android:background="@color/blue_grey_500" android:layout_width="350dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/data_lay">
+        <p068de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="center" android:id="@+id/coaching_logo_report_card" android:background="@drawable/ic_empty_profile_image" android:layout_width="56dp" android:layout_height="56dp" android:layout_margin="8dp"/>
+        <LinearLayout android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/report_coaching_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Coaching Center Name" android:fontFamily="@font/bw_bold"/>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/address_report_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Address" android:fontFamily="@font/bw_medium"/>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/mail_id_report_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mail Address" android:fontFamily="@font/bw_medium"/>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/mobile_number_report_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mobile Number" android:fontFamily="@font/bw_bold"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
