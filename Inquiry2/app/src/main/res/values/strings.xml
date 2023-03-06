@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Inquiry</string>
+    <string name="app_name1">Govardhan Institute</string>
+    <string name="dummy_text">A community with high expectation and high academic achievement.</string>
+    <string name="shared_file">MyFile</string>
+    <string name="IP">http://localhost/phpmyadmin/index.php?route=/database/structure&amp;server=1&amp;db=inquiry</string>
+</resources>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:contextClickable="true"
+            android:visibility="visible"
+            app:title="Personal Profile"
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/white"
+            android:textDirection="firstStrongLtr"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/main"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:gravity="end"
+                android:layout_marginRight="7dp"
+                android:clickable="true"
+                android:layout_gravity="end"
+                android:onClick="edit"
+                android:text="edit"
+                android:textStyle="bold"
+                android:textColor="@color/mid"
+                android:background="@android:color/transparent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white">
+
+                <ImageView
+                    android:layout_height="160dp"
+                    android:layout_width="160dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/Image"
+                    android:padding="2dp"
+                    android:background="@drawable/circle_outline" />
+
+                <TextView
+                    android:id="@+id/imageView"
+                    android:layout_width="160dp"
+                    android:background="@drawable/circle"
+                    android:text="K"
+                    android:textAlignment="center"
+                    android:textSize="100dp"
+                    android:layout_gravity="center"
+                    android:layout_height="160dp"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing" />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageloading" />
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginRight="90dp"
+                    android:clickable="true"
+                    android:foregroundTintMode="src_over"
+                    android:src="@drawable/ic_camera_alt_black_24dp"
+                    android:id="@+id/editImage"
+                    android:background="@color/contentBodyColor" />
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/nameImageView"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_baseline_person_outline_24"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/mainText"
+                    android:text="Name"
+                    android:layout_toRightOf="@id/nameImageView"
+                    style="@style/profileDetailsTextProfile" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:text="developer"
+                    android:enabled="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/nameImageView"
+                    style="@style/profileDetailsMiniTextProfile" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsViewProfile" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/mobileImageView"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_baseline_smartphone_24"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Mobile"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    style="@style/profileDetailsTextProfile" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    style="@style/profileDetailsMiniTextProfile"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:phoneNumber="true"
+                    android:maxLength="13"
+                    android:text="+919586773737"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    android:enabled="false" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsViewProfile" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_baseline_mail_outline_24"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Email"
+                    android:layout_toRightOf="@id/emailImageView"
+                    style="@style/profileDetailsTextProfile" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:text="developer@appsnipp.com"
+                    android:layout_marginLeft="5dp"
+                    android:enabled="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/emailImageView"
+                    style="@style/profileDetailsMiniTextProfile" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsViewProfile" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/addressImageView"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_baseline_location_on_24"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Address"
+                    android:layout_toRightOf="@id/addressImageView"
+                    style="@style/profileDetailsTextProfile" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:text="developer@appsnipp.com"
+                    android:layout_marginLeft="5dp"
+                    android:enabled="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/addressImageView"
+                    style="@style/profileDetailsMiniTextProfile" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsViewProfile" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/dobImageView"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_baseline_date_range_profile"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Date of Birth"
+                    android:layout_toRightOf="@id/dobImageView"
+                    style="@style/profileDetailsTextProfile" />
+
+                <EditText
+                    android:id="@+id/DOB"
+                    android:text="developer@appsnipp.com"
+                    android:layout_marginLeft="5dp"
+                    android:enabled="false"
+                    android:layout_marginTop="20dp"
+
+                    android:layout_toRightOf="@id/dobImageView"
+                    style="@style/profileDetailsMiniTextProfile" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsViewProfile" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

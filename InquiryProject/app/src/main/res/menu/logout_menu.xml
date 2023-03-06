@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+
+    <!--    <item-->
+    <!--        android:id="@+id/logout"-->
+    <!--        android:icon="@drawable/logout"-->
+    <!--        android:title="Logout"-->
+    <!--        app:showAsAction="always" />-->
+</menu>
